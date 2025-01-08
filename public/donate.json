@@ -1,83 +1,98 @@
 [
-    {
-      "category": "Health",
-      "title": "Children We Work With",
-      "description": "Lorem ipsum dolor sit amet, consete sadipscing elitr, sed diam nonum",
-      "progress": {
-        "percent": 85,
-        "raised": "$8500",
-        "goal": "$10,000"
-      }
+  {
+    "id": 1,
+    "category": "Health",
+    "title": "Children We Work With",
+    "description": "Lorem ipsum dolor sit amet, consete sadipscing elitr, sed diam nonum",
+    "progress": {
+      "percent": 85,
+      "raised":8500,
+      "goal": 10000
     },
-    {
-      "category": "Education",
-      "title": "School Supplies for Kids",
-      "description": "Help provide essential tools for young learners in need.",
-      "progress": {
-        "percent": 60,
-        "raised": "$3000",
-        "goal": "$5000"
-      }
+    "image": "https://i.ibb.co.com/d2Fw469/3.png"
+  },
+  {
+    "id": 2,
+    "category": "Education",
+    "title": "School Supplies for Kids",
+    "description": "Help provide essential tools for young learners in need.",
+    "progress": {
+      "percent": 60,
+      "raised": 3000,
+      "goal": 5000
     },
-    {
-      "category": "Environment",
-      "title": "Save the Forests",
-      "description": "Join our mission to protect endangered habitats worldwide.",
-      "progress": {
-        "percent": 40,
-        "raised": "$2000",
-        "goal": "$5000"
-      }
+    "image": "https://t4.ftcdn.net/jpg/08/98/05/81/240_F_898058162_uAfjCI3d1zEuZYUqUS4QKi1iZBwLh7LY.jpg"
+  },
+  {
+    "id": 3,
+    "category": "Environment",
+    "title": "Save the Forests",
+    "description": "Join our mission to protect endangered habitats worldwide.",
+    "progress": {
+      "percent": 40,
+      "raised": 2000,
+      "goal": 5000
     },
-    {
-      "category": "Animal Welfare",
-      "title": "Rescue Stray Animals",
-      "description": "Your donation helps save lives and provide shelter.",
-      "progress": {
-        "percent": 75,
-        "raised": "$3750",
-        "goal": "$5000"
-      }
+    "image": "https://i.ibb.co.com/gMd6szr/1.png "
+  },
+  {
+    "id": 4,
+    "category": "Animal Welfare",
+    "title": "Rescue Stray Animals",
+    "description": "Your donation helps save lives and provide shelter.",
+    "progress": {
+      "percent": 75,
+      "raised": 3750,
+      "goal": 5000
     },
-    {
-      "category": "Disaster Relief",
-      "title": "Earthquake Recovery Fund",
-      "description": "Aid families affected by recent natural disasters.",
-      "progress": {
-        "percent": 90,
-        "raised": "$9000",
-        "goal": "$10,000"
-      }
+    "image": "https://i.ibb.co.com/Jv7kBXt/4.png"
+  },
+  {
+    "id": 5,
+    "category": "Disaster Relief",
+    "title": "Earthquake Recovery Fund",
+    "description": "Aid families affected by recent natural disasters.",
+    "progress": {
+      "percent": 90,
+      "raised": 9000,
+      "goal": 10000
     },
-    {
-      "category": "Health",
-      "title": "Clean Water Access",
-      "description": "Provide safe drinking water to underserved communities.",
-      "progress": {
-        "percent": 50,
-        "raised": "$2500",
-        "goal": "$5000"
-      }
+    "image": "https://t3.ftcdn.net/jpg/10/04/68/50/240_F_1004685049_KDkH0qBIzAUH6cEbCnDlkgCHPSzgIa68.jpg"
+  },
+  {
+    "id": 6,
+    "category": "Health",
+    "title": "Clean Water Access",
+    "description": "Provide safe drinking water to underserved communities.",
+    "progress": {
+      "percent": 50,
+      "raised": 2500,
+      "goal": 5000
     },
-    {
-      "category": "Community",
-      "title": "Build Homes for the Homeless",
-      "description": "Help us construct shelters for those in need.",
-      "progress": {
-        "percent": 20,
-        "raised": "$1000",
-        "goal": "$5000"
-      }
+    "image": "https://t3.ftcdn.net/jpg/11/27/63/94/240_F_1127639406_AZyOLvYWJNSigtxtxaabZgtkkSK7pV1b.jpg"
+  },
+  {
+    "id": 7,
+    "category": "Community",
+    "title": "Children We Work With",
+    "description": "Help us construct shelters for those in need.",
+    "progress": {
+      "percent": 20,
+      "raised": 1000,
+      "goal": 5000
     },
-    {
-      "category": "Education",
-      "title": "Literacy Program",
-      "description": "Support adult literacy initiatives in rural areas.",
-      "progress": {
-        "percent": 70,
-        "raised": "$3500",
-        "goal": "$5000"
-      }
-    }
-  ]
-  
+    "image": "https://t3.ftcdn.net/jpg/09/07/02/44/240_F_907024458_Qbgb4QP4TskmVGcaAo0mvZL0UGeJVed2.jpg"
+  },
+  {
+    "id": 8,
+    "category": "Education",
+    "title": "Literacy Program",
+    "description": "Support adult literacy initiatives in rural areas.",
+    "progress": {
+      "percent": 70,
+      "raised": 3500,
+      "goal": 5000
+    },
+    "image": "https://t4.ftcdn.net/jpg/09/26/18/97/240_F_926189784_tzPQUxdpjoCFgZkxh7vdSdtLydIU37jx.jpg"
+  }
+]

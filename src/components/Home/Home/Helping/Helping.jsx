@@ -2,13 +2,13 @@ import helpingImg1 from "../../../../assets/help1.png";
 import helpingImg2 from "../../../../assets/hellp2.png";
 import helpingImg3 from "../../../../assets/hellp3.png";
 import helpingImg4 from "../../../../assets/hellp4.png";
-import heartImg from "../../../../assets/heart (1) 1.png";
 import handLove from '../../../../assets/loveHellp.png';
 import handBall from '../../../../assets/handBall.png';
 import chilp from '../../../../assets/cllip.png';
 import { FaCheck } from "react-icons/fa6";
-import CardHeart from "../../../../assets/cardHeart.png"
-import { motion } from "motion/react"
+import CardHeart from "../../../../assets/cardHeart.png";
+import { motion } from "motion/react";
+import heartGreen from '../../../../assets/heartGreen.png'
 
 const Helping = () => {
   return (
@@ -45,7 +45,7 @@ const Helping = () => {
       {/* text content */}
       <div className="lg:w-1/2 ">
         <div className="flex items-center gap-2">
-          <img className="w-5 h-5" src={heartImg} alt="" />
+          <img className="w-5 h-5" src={heartGreen} alt="" />
           <p className="caveat font-medium text-[#2c6b59] text-xl">
             Start donating poor people
           </p>
