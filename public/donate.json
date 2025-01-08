@@ -1,0 +1,83 @@
+[
+    {
+      "category": "Health",
+      "title": "Children We Work With",
+      "description": "Lorem ipsum dolor sit amet, consete sadipscing elitr, sed diam nonum",
+      "progress": {
+        "percent": 85,
+        "raised": "$8500",
+        "goal": "$10,000"
+      }
+    },
+    {
+      "category": "Education",
+      "title": "School Supplies for Kids",
+      "description": "Help provide essential tools for young learners in need.",
+      "progress": {
+        "percent": 60,
+        "raised": "$3000",
+        "goal": "$5000"
+      }
+    },
+    {
+      "category": "Environment",
+      "title": "Save the Forests",
+      "description": "Join our mission to protect endangered habitats worldwide.",
+      "progress": {
+        "percent": 40,
+        "raised": "$2000",
+        "goal": "$5000"
+      }
+    },
+    {
+      "category": "Animal Welfare",
+      "title": "Rescue Stray Animals",
+      "description": "Your donation helps save lives and provide shelter.",
+      "progress": {
+        "percent": 75,
+        "raised": "$3750",
+        "goal": "$5000"
+      }
+    },
+    {
+      "category": "Disaster Relief",
+      "title": "Earthquake Recovery Fund",
+      "description": "Aid families affected by recent natural disasters.",
+      "progress": {
+        "percent": 90,
+        "raised": "$9000",
+        "goal": "$10,000"
+      }
+    },
+    {
+      "category": "Health",
+      "title": "Clean Water Access",
+      "description": "Provide safe drinking water to underserved communities.",
+      "progress": {
+        "percent": 50,
+        "raised": "$2500",
+        "goal": "$5000"
+      }
+    },
+    {
+      "category": "Community",
+      "title": "Build Homes for the Homeless",
+      "description": "Help us construct shelters for those in need.",
+      "progress": {
+        "percent": 20,
+        "raised": "$1000",
+        "goal": "$5000"
+      }
+    },
+    {
+      "category": "Education",
+      "title": "Literacy Program",
+      "description": "Support adult literacy initiatives in rural areas.",
+      "progress": {
+        "percent": 70,
+        "raised": "$3500",
+        "goal": "$5000"
+      }
+    }
+  ]
+  

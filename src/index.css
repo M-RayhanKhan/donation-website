@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* caveat font */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+/* font inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: "Nunito", serif;
+}
+.caveat{
+    font-family: "Caveat", serif;
+}
+.inter{
+    font-family: "Inter", serif;
+}
+
+html{
+    overflow-y: scroll;
+}
+
+.clip{
+    clip-path: polygon(100% 0, 100% 100%, 0 99%, 0 55%);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    overflow: visible;
+}
