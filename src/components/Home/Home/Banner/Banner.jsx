@@ -2,11 +2,18 @@ import { Link } from "react-router-dom";
 import bannerImg from "../../../../assets/banner.png";
 import heartImg from "../../../../assets/heart (1) 1.png";
 import { IoArrowForwardOutline } from "react-icons/io5";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {motion} from "motion/react"
 import kataChiraImg from '../../../../assets/katacira.png'
+import Aos from "aos";
+import 'animate.css';
 
 const Banner = () => {
+
+  useEffect(() => {
+    Aos.init({duration: 2500})
+  }, [])
+
   const [isActive, setActive] = useState({
     getBtn: true,
     status: "get",
@@ -45,13 +52,13 @@ const Banner = () => {
   return (
     <section style={bannerStyle} className="relative z-30">
       {/* banner text contant */}
-      <div className="flex items-center gap-2">
+      <div className="flex animate__animated animate__rotateInDownLeft items-center gap-2">
         <img className="w-5 h-5" src={heartImg} alt="" />
         <p className="caveat font-medium text-yellowText text-xl">
           Start donating poor people
         </p>
       </div>
-      <h1 className="text-textWhite md:leading-[65px] font-bold text-4xl md:text-[70px]">
+      <h1 className="text-textWhite md:leading-[65px] font-bold text-4xl md:text-[70px] animate__animated animate__backInLeft ">
         Helping Each Other Make <br className=" hidden md:block" />
         <span className="text-yellowText font-normal">Better</span> today
       </h1>
@@ -135,7 +142,7 @@ const Banner = () => {
           </motion.button>
         </Link>
       </div>
-      <div className="md:w-[450px] h-[450px] backdrop-blur-sm absolute w-full  -z-10 bg-[#17302b96] rounded-full"></div>
+      <div data-aos="fade-right" className="md:w-[450px] h-[450px] backdrop-blur-sm absolute w-full  -z-10 bg-[#17302b96] rounded-full"></div>
       <div className="absolute bottom-0 z-5">
         <img src={kataChiraImg} alt="" />
       </div>

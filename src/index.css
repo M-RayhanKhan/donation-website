@@ -28,3 +28,9 @@ html{
     overflow: visible;
 }
 
+.animate__backInLeft{
+    --animate-duration: 2s;
+}
+.animate__rotateInDownLeft{
+    --animate-duration: 2s;
+}

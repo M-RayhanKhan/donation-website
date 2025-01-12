@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@shadcn/ui": "^0.0.4",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.5.2",
     "localforage": "^1.10.0",
