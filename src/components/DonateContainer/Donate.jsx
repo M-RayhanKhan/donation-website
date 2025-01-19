@@ -102,10 +102,10 @@ const Donate = () => {
           </Swiper>
         </div>
         {/* Custom Navigation Buttons */}
-        <button className="custom-prev absolute md:top-40 lg:top-[55%] top-72 right-[25%] md:right-auto md:left-4 transform md:-translate-y-1/2 bg-[#122f2a] hover:bg-[#122f2ae5] text-[#ffffff] text-sm p-3 rounded-full z-10">
+        <button className="custom-prev absolute md:top-40 lg:top-[55%] top-72 right-[25%] md:right-auto md:left-4 transform md:-translate-y-1/2 bg-[#122f2a] hover:bg-yellowBg text-[#ffffff] text-sm p-3 rounded-full z-10">
           <FaArrowLeft />
         </button>
-        <button className="custom-next absolute lg:top-[55%] md:top-40 right-10 top-72   md:right-4 transform md:-translate-y-1/2 bg-[#122f2a] hover:bg-[#122f2ae5] text-[#ffffff]  text-sm p-3 rounded-full z-10">
+        <button className="custom-next absolute lg:top-[55%] md:top-40 right-10 top-72   md:right-4 transform md:-translate-y-1/2 bg-[#122f2a] hover:bg-yellowBg text-[#ffffff]  text-sm p-3 rounded-full z-10">
           <FaArrowRight />
         </button>
     

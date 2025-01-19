@@ -3,6 +3,7 @@ import Donate from "../../DonateContainer/Donate";
 import Banner from "./Banner/Banner";
 import ChildrenTrouble from "./ChildrenTrouble/ChildrenTrouble";
 import Helping from "./Helping/Helping";
+import SuperClient from "./SuperClient/SuperClient";
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
            <Helping/>
            <Donate/>
            <ChildrenTrouble/>
+           <SuperClient/>
         </div>
     );
 };

@@ -1,0 +1,51 @@
+[
+  {
+ 
+    "id": 1,
+    "name": "Joinal Abden",
+    "role": "Boss",
+    "image": "https://i.ibb.co.com/qMDCNyQ/joinal-vai.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Rayhan Khan",
+    "role": "Frontend Developer",
+    "image": "https://i.ibb.co.com/bX2qhH3/rayhan-khan.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Jackson Halbert",
+    "role": "Designer",
+    "image": "https://i.ibb.co.com/8gcYwY6/client3.png"
+  },
+  {
+    "id": 4,
+    "name": "Aria Chen",
+    "role": "Developer",
+    "image": "https://i.ibb.co.com/YBm9G5t/client4.png"
+  },
+  {
+    "id": 5,
+    "name": "Michel Fokluz Huta ",
+    "role": "Volunteer",
+    "image": "https://i.ibb.co.com/RpHSXN1/client1.png"
+  },
+  {
+    "id": 6,
+    "name": "Olivia Romanov",
+    "role": "Content Writer",
+    "image": "https://t3.ftcdn.net/jpg/04/98/47/58/240_F_498475894_SnGgpteBGCicuXJzRyQCxo98DiFyW4Mw.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Ethan Maxwell",
+    "role": "Data Analyst",
+    "image": "https://t3.ftcdn.net/jpg/09/84/48/52/240_F_984485252_PHECtePMhedauPXaPCrL4oWk8PMGLlRY.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Emma Johansson",
+    "role": "Social Media Manager",
+    "image": "https://i.ibb.co.com/tDB1t6p/client2.png"
+  }
+]

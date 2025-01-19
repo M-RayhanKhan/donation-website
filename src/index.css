@@ -34,3 +34,7 @@ html{
 .animate__rotateInDownLeft{
     --animate-duration: 2s;
 }
+
+.super-card{
+    background-image: linear-gradient(to right top, #0c48a2, #5666b3, #8286c4, #aaa8d5, #cfcce7, #dfddef, #efeef7, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+}
