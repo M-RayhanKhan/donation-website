@@ -4,6 +4,7 @@ import Donate from "../../DonateContainer/Donate";
 import Banner from "./Banner/Banner";
 import ChildrenTrouble from "./ChildrenTrouble/ChildrenTrouble";
 import AccordionSection from "./Faq/AccordionSection";
+import HeartCare from "./HeartCare/HeartCare";
 
 
 import Helping from "./Helping/Helping";
@@ -19,6 +20,7 @@ const Home = () => {
            <ChildrenTrouble/>
            <SuperClient/>
            <AccordionSection/>
+           <HeartCare/>
         </div>
     );
 };
