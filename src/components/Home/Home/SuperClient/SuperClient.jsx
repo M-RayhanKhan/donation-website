@@ -17,7 +17,7 @@ const SuperClient = () => {
     <section className="my-20 relative bg-[#fbf8f4] py-20 lg:py-28 ">
       <TitlePage />
 
-      <div className="mt-4 max-w-7xl mx-auto px-2 lg:px-0">
+      <div className="mt-4 max-w-7xl mx-auto px-5 lg:px-0">
         <Swiper
                 slidesPerView={1}
                 spaceBetween={10}
@@ -35,7 +35,7 @@ const SuperClient = () => {
                     spaceBetween: 20,
                   },
                   768: {
-                    slidesPerView: 3,
+                    slidesPerView: 2,
                     spaceBetween: 10,
                   },
                   1024: {
@@ -53,7 +53,7 @@ const SuperClient = () => {
           ))}
         </Swiper>
       </div>
-      <div className="absolute right-3 top-16">
+      <div className="absolute right-3 top-0 top-16">
         <img className="w-20" src={loveImg} alt="" />
       </div>
     </section>

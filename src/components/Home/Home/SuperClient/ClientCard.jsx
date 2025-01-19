@@ -15,18 +15,18 @@ const ClientCard = ({client}) => {
 
     return (
         <div className="group relative">
-            <div className="w-full h-[320px]  ">
+            <div className="w-full h-[400px] md:h-[320px]  ">
                 <img className="w-full rounded-t-xl h-full object-cover" src={image} alt={`${name}`} />
             </div>
-            <div className="absolute hidden group-duration-500 transition-all group-hover:block top-[126px]">
+            <div className="absolute hidden group-duration-500 transition-all group-hover:block bottom-[90px] lg:top-[126px]">
                 <img src={gradientImg} alt="" />
             </div>
-            <button className="group-hover:bg-[#122f2a] duration-[1500ms] bg-[#f1f0ee] group-hover:text-white text-title py-3 px-3 w-full group flex flex-col justify-center items-start">
+            <button className="group-hover:bg-[#122f2a] duration-[1500ms] bg-[#f1f0ee] group-hover:text-white text-title py-5 px-3 w-full group flex flex-col justify-center items-start">
                 <span className="text-xl font-bold  ">{name}</span>  
                <span className="group-hover:text-yellowText font-medium">{role}</span>
             </button>
             {/* active button */}
-            <div onClick={() => setActive(!active)} className="absolute right-4 bottom-[70px]">
+            <div onClick={() => setActive(!active)} className="absolute right-4 bottom-[75px]">
                {
                 active ? <button className="bg-[#122f2a] text-white duration-500 group-hover:bg-yellowBg group-hover:text-title  p-2 rounded-full"><IoMdClose className=""/></button>  :  <button className="bg-[#122f2a] text-white duration-500 group-hover:bg-yellowBg group-hover:text-title  p-2 rounded-full"><HiOutlinePlus /></button>
                }
