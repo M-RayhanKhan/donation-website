@@ -9,7 +9,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 // import required modules
-import { Pagination, Navigation , Autoplay} from 'swiper/modules';
+import { Pagination, Navigation } from 'swiper/modules';
 
 const ReviewSection = () => {
   const [review, setReview] = useState([]);
@@ -52,10 +52,10 @@ const ReviewSection = () => {
           About us
         </h1>
       </div>
-      <div className="max-w-[1279px]  mt-5 mx-auto ">
+      <div className="max-w-[1279px]  mt-5 mx-auto">
         <Swiper
          slidesPerView={1} 
-        //  spaceBetween={30} 
+        
          loop={true} 
          navigation={{
            nextEl: ".custom-next",

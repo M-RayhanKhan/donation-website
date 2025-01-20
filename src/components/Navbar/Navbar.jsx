@@ -152,7 +152,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* main div */}
-      <section
+      <section id="home"
         className={`${
           isSticky ? "fixed top-0  " : "relative"
         } mx-auto w-full  z-50 transfrom duration-700`}

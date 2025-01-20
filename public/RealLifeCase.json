@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "author": "Mehedii.H",
+      "comments": 3,
+      "title": "IT Service Case Studies Accelerate Business Fly Success Tech",
+      "category": "Volunteer",
+      "image": "https://i.ibb.co.com/ftrrB5W/image.png",
+      "readMoreLink": "#"
+    },
+    {
+      "id": 2,
+      "author": "John.D",
+      "comments": 5,
+      "title": "Building a Better Future with Tech Innovations",
+      "category": "Innovation",
+      "image": "https://img.freepik.com/free-photo/front-view-smiley-girl-with-flying-goggles_23-2150182512.jpg?ga=GA1.1.2050910542.1736684990&semt=ais_hybrid",
+      "readMoreLink": "#"
+    },
+    {
+      "id": 3,
+      "author": "Emily.R",
+      "comments": 8,
+      "title": "Community Engagement Through Digital Solutions",
+      "category": "Community",
+      "image": "https://img.freepik.com/free-photo/medium-shot-happy-kids-posing_23-2148761586.jpg?ga=GA1.1.2050910542.1736684990&semt=ais_hybrid",
+      "readMoreLink": "#"
+    },
+    {
+      "id": 4,
+      "author": "Sophia.L",
+      "comments": 4,
+      "title": "Transforming Businesses with Modern IT Practices",
+      "category": "Business",
+      "image": "https://img.freepik.com/free-photo/young-girl-boy-childs_23-2148852687.jpg?ga=GA1.1.2050910542.1736684990&semt=ais_hybrid",
+      "readMoreLink": "#"
+    },
+    {
+      "id": 5,
+      "author": "Michael.B",
+      "comments": 2,
+      "title": "How Volunteer Efforts Drive Social Impact",
+      "category": "Volunteer",
+      "image": "https://img.freepik.com/free-photo/full-shot-cute-african-girls-outdoors_23-2148860394.jpg?ga=GA1.1.2050910542.1736684990&semt=ais_hybrid",
+      "readMoreLink": "#"
+    },
+    {
+      "id": 6,
+      "author": "Jessica.K",
+      "comments": 6,
+      "title": "Empowering Teams Through Collaboration Tools",
+      "category": "Collaboration",
+      "image": "https://img.freepik.com/free-photo/girl-bunny-ears-boy-with-easter-eggs_23-2148072863.jpg?ga=GA1.1.2050910542.1736684990&semt=ais_hybrid",
+      "readMoreLink": "#"
+    },
+    {
+      "id": 7,
+      "author": "Daniel.W",
+      "comments": 9,
+      "title": "Creating Scalable Solutions for Startups",
+      "category": "Startups",
+      "image": "https://img.freepik.com/free-photo/pretty-girl-holding-hat-head_23-2148070386.jpg?ga=GA1.1.2050910542.1736684990&semt=ais_hybrid",
+      "readMoreLink": "#"
+    },
+    {
+      "id": 8,
+      "author": "Olivia.T",
+      "comments": 7,
+      "title": "How Volunteer Efforts Drive Social Impact",
+      "category": "Education",
+      "image": "https://img.freepik.com/free-photo/group-children-posing-together_23-2148022587.jpg?ga=GA1.1.2050910542.1736684990&semt=ais_hybrid",
+      "readMoreLink": "#"
+    }
+  ]
+  
