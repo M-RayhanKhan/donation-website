@@ -83,10 +83,7 @@ const Donate = () => {
                 spaceBetween: 20,
               },
             }}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
+            loop={true}
             navigation={{
               nextEl: ".custom-next",
               prevEl: ".custom-prev",

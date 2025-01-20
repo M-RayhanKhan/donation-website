@@ -8,6 +8,7 @@ import HeartCare from "./HeartCare/HeartCare";
 
 
 import Helping from "./Helping/Helping";
+import ReviewSection from "./ReviewSection/ReviewSection";
 import SuperClient from "./SuperClient/SuperClient";
 
 
@@ -21,6 +22,7 @@ const Home = () => {
            <SuperClient/>
            <AccordionSection/>
            <HeartCare/>
+           <ReviewSection/>
         </div>
     );
 };

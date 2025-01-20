@@ -33,7 +33,7 @@ const AccordionSection = () => {
   const [open, setOpen] = useState(0);
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
   return (
-    <section className="flex flex-col lg:flex-row  mb-10 max-w-7xl mx-auto gap-5   md:gap-16">
+    <section className="flex flex-col lg:flex-row  mb-10 max-w-[1279px] mx-auto gap-5   md:gap-16">
       <div className="lg:w-[50%] px-2 md:px-4 lg:px-0">
         <div>
           <div className="flex items-center gap-2">

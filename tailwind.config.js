@@ -20,7 +20,7 @@ export default {
         greenBg: "#122f2a"
       },
       backgroundImage: {
-        bannerLinear: "url('./src/assets/bannerlinear.png')"
+        bannerLinear: "url('./src/assets/bannerlinear.png')",
       }
     },
   },

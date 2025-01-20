@@ -6,25 +6,25 @@ import brand5 from '../../../../assets/brand-5.png'
 import Marquee from "react-fast-marquee";
 const HeartCare = () => {
     return (
-        <section className="bg-[#edeeef] py-10 mb-10">
-                <div className="max-w-7xl grid gap-2 grid-cols-3 md:grid-cols-5 mx-auto px-2 lg:px-0">
-                    <Marquee pauseOnHover speed={100}>
+        <section className="bg-[#edeeef] py-10">
+                <div className="max-w-[1275px] grid gap-2 grid-cols-3 md:grid-cols-5 mx-auto px-2 lg:px-0">
+                    <Marquee pauseOnHover speed={50}>
                         <img className='w-[120px]' src={brand1} alt="" />
                     </Marquee>
-                    <Marquee pauseOnHover speed={100}>
+                    <Marquee pauseOnHover speed={50}>
                         <img className='w-[120px]' src={brand2} alt="" />
                     </Marquee>
-                    <Marquee pauseOnHover speed={100}>
+                    <Marquee pauseOnHover speed={50}>
                         <img className='w-[120px]' src={brand3} alt="" />
                     </Marquee>
-                    <Marquee pauseOnHover speed={100}>
+                    <Marquee pauseOnHover speed={50}>
                         <img className='w-[120px]' src={brand4} alt="" />
                     </Marquee>
-                    <Marquee pauseOnHover speed={100}>
+                    <Marquee pauseOnHover speed={50}>
                         <img className='w-[120px]' src={brand5} alt="" />
                     </Marquee>
                     <div className='md:hidden'>
-                    <Marquee pauseOnHover speed={100}>
+                    <Marquee pauseOnHover speed={50}>
                         <img className='w-[120px]' src={brand1} alt="" />
                     </Marquee>
                     </div>
