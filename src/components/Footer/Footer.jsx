@@ -299,9 +299,9 @@ const Footer = () => {
         <p className="font-bold text-textWhite">© 2024 <span className="text-yellowText">S7template</span> -Logistic Service. All rights reserved.</p>
         {/*  */}
         <div className="flex items-center gap-5">
-          <p className="text-textWhite hover:link">Company</p>
-          <p className="text-textWhite hover:link">Support</p>
-          <p className="text-textWhite hover:link">Privacy</p>
+          <p className="text-textWhite hover:link"><Link>Company</Link></p>
+          <p className="text-textWhite hover:link"><Link>Support</Link></p>
+          <p className="text-textWhite hover:link"><Link>Privacy</Link></p>
         </div>
       </div>
     </section>
