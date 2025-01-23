@@ -178,7 +178,7 @@ const Navbar = () => {
                     </button>
                   )}
                   <div
-                    className={`absolute py-5 shadow-xl duration-500 bg-base-100 px-8 text-center flex inter text-xl flex-col space-y-8  mt-5 ${
+                    className={`absolute py-5 shadow-xl duration-500 bg-[#081e1a] px-8 text-center flex inter text-xl flex-col space-y-8  mt-5 ${
                       state ? "left-0 " : "-left-40"
                     }`}
                   >
@@ -186,8 +186,8 @@ const Navbar = () => {
                       to="/"
                       className={({ isActive }) =>
                         isActive
-                          ? "text-yellow-400 bg-gray-400"
-                          : " text-blackText hover:text-yellow-400"
+                          ? "text-yellow-400 "
+                          : " text-textWhite hover:text-yellow-400"
                       }
                     >
                       Home
@@ -196,8 +196,8 @@ const Navbar = () => {
                       to="/pages"
                       className={({ isActive }) =>
                         isActive
-                          ? "text-yellow-400 bg-gray-400 "
-                          : " text-blackText hover:text-yellow-400"
+                          ? "text-yellow-400  "
+                          : " text-textWhite hover:text-yellow-400"
                       }
                     >
                       Pages
@@ -206,8 +206,8 @@ const Navbar = () => {
                       to="/services"
                       className={({ isActive }) =>
                         isActive
-                          ? "text-yellow-400 bg-gray-400"
-                          : " text-blackText hover:text-yellow-400"
+                          ? "text-yellow-400 "
+                          : " text-textWhite hover:text-yellow-400"
                       }
                     >
                       Services
@@ -216,8 +216,8 @@ const Navbar = () => {
                       to="/protfolio"
                       className={({ isActive }) =>
                         isActive
-                          ? "text-yellow-400 bg-gray-400"
-                          : " text-blackText hover:text-yellow-400"
+                          ? "text-yellow-400 "
+                          : " text-textWhite hover:text-yellow-400"
                       }
                     >
                       Portfolio
@@ -226,8 +226,8 @@ const Navbar = () => {
                       to="/news"
                       className={({ isActive }) =>
                         isActive
-                          ? "text-yellow-400 bg-gray-400"
-                          : " text-blackText hover:text-yellow-400"
+                          ? "text-yellow-400 "
+                          : " text-textWhite hover:text-yellow-400"
                       }
                     >
                       News
@@ -236,8 +236,8 @@ const Navbar = () => {
                       to="/contact"
                       className={({ isActive }) =>
                         isActive
-                          ? "text-yellow-400 bg-gray-400"
-                          : " text-blackText hover:text-yellow-400"
+                          ? "text-yellow-400 "
+                          : " text-textWhite hover:text-yellow-400"
                       }
                     >
                       Contact
