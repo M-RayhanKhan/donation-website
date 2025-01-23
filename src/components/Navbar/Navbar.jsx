@@ -246,7 +246,7 @@ const Navbar = () => {
                 </div>
               </div>
               <img className="w-7 h-7 mr-2" src={logoImg} alt="" />
-              <h4 className="text-2xl font-bold text-subGreen">Charitia</h4>
+              <h4 className="text-2xl font-bold text-title">Charitia</h4>
             </div>
             {/* lg flex items */}
             <div className="lg:block hidden">

@@ -1,46 +1,309 @@
+import { Link } from "react-router-dom";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import { IoCheckmarkSharp } from "react-icons/io5";
+import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
+import { motion, useInView } from "motion/react";
+import { useRef } from "react";
+import logoImg from '../../assets/logo.png'
+
 const Footer = () => {
+  const ref = useRef(null);
+  const inView = useInView(ref);
+
   return (
-    <section>
-      <footer className="footer bg-base-200 text-base-content p-10">
-        <aside>
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            fillRule="evenodd"
-            clipRule="evenodd"
-            className="fill-current"
-          >
-            <path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
-          </svg>
-          <p>
-            ACME Industries Ltd.
-            <br />
-            Providing reliable tech since 1992
-          </p>
-        </aside>
-        <nav>
-          <h6 className="footer-title">Services</h6>
-          <a className="link link-hover">Branding</a>
-          <a className="link link-hover">Design</a>
-          <a className="link link-hover">Marketing</a>
-          <a className="link link-hover">Advertisement</a>
-        </nav>
-        <nav>
-          <h6 className="footer-title">Company</h6>
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
-        </nav>
-        <nav>
-          <h6 className="footer-title">Legal</h6>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
-        </nav>
+    <section className=" bg-gradient-to-r from-[#081e1a] to-[#0b1312]">
+      <footer className="max-w-[1281px] mx-auto  py-20 px-2 lg:px-0 flex lg:gap-20 flex-col lg:flex-row">
+        {/* left side content */}
+        <div className="lg:w-[48%]">
+          <h1 className="text-textWhite font-bold text-[40px] leading-none">
+            children need your help <br className="hidden md:block" />
+            by <span className="text-yellowText">Donating</span> today
+          </h1>
+          {/* input box */}
+          <div className="bg-[#3a454345] rounded-lg pl-3 mt-5 md:mt-16 md:pl-8 pt-10 md:pr-8 pb-12">
+            <h2 className="text-textWhite text-[28px] font-bold">
+              Subscribe Newsletter
+            </h2>
+            <p className="text-[#93989c] mt-3">
+              We understand that every challenge is an opportunity{" "}
+            </p>
+            {/* input email */}
+            <div className="flex flex-wrap mt-6 items-center gap-4">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                className="bg-[#3a454345] font-bold rounded-md text-[#939d9c] py-3 px-6 outline-none border border-[#2e413e] focus:border-[#3a4543bc]  focus:ring-1 focus:ring-[#3a4543bc] md:w-[328.51px]  md:h-[56px]"
+              />
+              {/* sign up button */}
+              <Link>
+                {" "}
+                <button className="text-blackText font-bold bg-yellow-500 md:w-[151px] w-full px-6 h-[56px] rounded-lg flex justify-center items-center">
+                  Sign Up <MdKeyboardArrowRight className="text-xl" />{" "}
+                </button>
+              </Link>
+            </div>
+            {/* description */}
+            <div className="flex gap-3 mt-5  items-center">
+              <button className="text-yellowText border-2 border-[#4e545f] p-1.5 rounded-full">
+                <IoCheckmarkSharp />
+              </button>
+              <p className="text-lowGray  font-bold">
+                By subscribing, you’re accept{" "}
+                <Link>
+                  <span className="text-textWhite link ">Privacy Policy</span>
+                </Link>
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* right side content lg:device responsive*/}
+        <div className="lg:w-[52%] relative hidden  lg:block">
+          {/*  */}
+          <div className="relative">
+            <button className="md:w-[500px]  w-full  h-[84px] absolute top-0 right-0  bg-[#151d1b] rounded-full text-[20px] pl-12 font-bold text-textWhite">
+              <motion.p
+                animate={
+                  inView
+                    ? {
+                        opacity: 1,
+                        transition: {
+                          duration: 3,
+                          delay: 2,
+                          ease: "easeInOut",
+                        },
+                      }
+                    : { opacity: 0, rotate: 45 }
+                }
+              >
+                for Any Enquiry
+                <span className="text-yellowText link">
+                  <Link>@WOWtheme.co</Link>
+                </span>
+              </motion.p>
+            </button>
+            {/* motion */}
+            <motion.div
+              animate={
+                inView
+                  ? {
+                      x: 0,
+                      transition: { delay: 0.5, duration: 2, ease: "linear" },
+                    }
+                  : { x: 419, transition: { duration: 1, ease: "linear" } }
+              }
+              className="bg-[#313836] 
+        w-[68px] h-[68px] absolute left-[133px] top-[8px] rounded-full"
+              ref={ref}
+            ></motion.div>
+          </div>
+          <div className="flex mt-[133px] items-center justify-between">
+            {/* Services itmes content */}
+            <div className="">
+              <h3 className="text-xl font-bold text-textWhite">Services</h3>
+              <Link>
+                <p className="text-lowGray my-2 flex gap-1 items-center hover:text-yellowText duration-500 group">
+                  <MdKeyboardDoubleArrowLeft className="group-hover:block hidden" />
+                  <span>Request A Quate</span>
+                </p>
+              </Link>
+              <Link>
+                <p className="text-lowGray  flex gap-1 items-center hover:text-yellowText duration-500 group">
+                  <MdKeyboardDoubleArrowLeft className="group-hover:block hidden" />
+                  <span>Our Services</span>
+                </p>
+              </Link>
+              <Link>
+                <p className="text-lowGray my-2 flex gap-1 items-center hover:text-yellowText duration-500 group">
+                  <MdKeyboardDoubleArrowLeft className="group-hover:block hidden" />
+                  <span>Our What We Do</span>
+                </p>
+              </Link>
+              <Link>
+                <p className="text-lowGray flex gap-1 items-center hover:text-yellowText duration-500 group">
+                  <MdKeyboardDoubleArrowLeft className="group-hover:block hidden" />
+                  <span>Shipments</span>
+                </p>
+              </Link>
+              <Link>
+                <p className="text-lowGray mt-2 flex gap-1 items-center hover:text-yellowText duration-500 group">
+                  <MdKeyboardDoubleArrowLeft className="group-hover:block hidden" />
+                  <span>Pricing Flexibility</span>
+                </p>
+              </Link>
+            </div>
+            {/* location */}
+            <div>
+              <h3 className="text-xl font-bold text-textWhite">Location</h3>
+              <p className="text-lowGray mt-2 flex gap-1 items-center hover:text-yellowText duration-500 group">
+                55 Main Street, 2nd block <br className="md:block hidden" />
+                Malborne, Australia
+              </p>
+              <h3 className="text-xl font-bold text-textWhite mt-5">Contact</h3>
+              <p className="text-lowGray mt-2 flex gap-1 items-center hover:text-yellowText duration-500 group">
+                support@gmail.com
+              </p>
+              <p className="text-lowGray mt-2 flex gap-1 items-center hover:text-yellowText duration-500 group">
+                +880 (123) 456 88
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* right side content medium device responsive*/}
+        <div className=" relative hidden md:block lg:hidden">
+          {/*  */}
+          <div className="relative">
+            <button className="md:w-[500px]  w-full  h-[84px] absolute top-[50px] right-[16%]  bg-[#151d1b] rounded-full text-[20px] pl-12 font-bold text-textWhite">
+              <p>
+                for Any Enquiry{" "}
+                <span className="text-yellowText link">
+                  <Link>@WOWtheme.co</Link>
+                </span>
+              </p>
+            </button>
+            {/* motion */}
+            <div
+              className="bg-[#313836] 
+        w-[68px] h-[68px] absolute left-[140px] top-[58px] rounded-full"
+            ></div>
+          </div>
+          <div className="flex gap-40 overflow-hidden mt-[183px] items-center justify-center">
+            {/* Services itmes content */}
+            <div className="">
+              <h3 className="text-xl font-bold text-textWhite">Services</h3>
+              <Link>
+                <p className="text-lowGray my-2 flex gap-1 items-center hover:text-yellowText duration-500 group">
+                  <MdKeyboardDoubleArrowLeft className="group-hover:block hidden" />
+                  <span>Request A Quate</span>
+                </p>
+              </Link>
+              <Link>
+                <p className="text-lowGray  flex gap-1 items-center hover:text-yellowText duration-500 group">
+                  <MdKeyboardDoubleArrowLeft className="group-hover:block hidden" />
+                  <span>Our Services</span>
+                </p>
+              </Link>
+              <Link>
+                <p className="text-lowGray my-2 flex gap-1 items-center hover:text-yellowText duration-500 group">
+                  <MdKeyboardDoubleArrowLeft className="group-hover:block hidden" />
+                  <span>Our What We Do</span>
+                </p>
+              </Link>
+              <Link>
+                <p className="text-lowGray flex gap-1 items-center hover:text-yellowText duration-500 group">
+                  <MdKeyboardDoubleArrowLeft className="group-hover:block hidden" />
+                  <span>Shipments</span>
+                </p>
+              </Link>
+              <Link>
+                <p className="text-lowGray mt-2 flex gap-1 items-center hover:text-yellowText duration-500 group">
+                  <MdKeyboardDoubleArrowLeft className="group-hover:block hidden" />
+                  <span>Pricing Flexibility</span>
+                </p>
+              </Link>
+            </div>
+            {/* location */}
+            <div className="">
+              <h3 className="text-xl font-bold text-textWhite">Location</h3>
+              <p className="text-lowGray mt-2 flex gap-1 items-center hover:text-yellowText duration-500 group">
+                55 Main Street, 2nd block <br className="md:block hidden" />
+                Malborne, Australia
+              </p>
+              <h3 className="text-xl font-bold text-textWhite mt-5">Contact</h3>
+              <p className="text-lowGray mt-2 flex gap-1 items-center hover:text-yellowText duration-500 group">
+                support@gmail.com
+              </p>
+              <p className="text-lowGray mt-2 flex gap-1 items-center hover:text-yellowText duration-500 group">
+                +880 (123) 456 88
+              </p>
+            </div>
+          </div>
+        </div>
+        {/*right side content  mobile device responsive */}
+        <div className=" relative md:hidden lg:hidden">
+          {/*  */}
+          <div className="relative">
+            <button className="md:w-[500px] mt-5  w-full  h-[84px] absolute top-0 right-0  bg-[#151d1b]  rounded-full text-[16px] pl-12 font-bold text-textWhite">
+              <p>
+                for Any Enquiry{" "}
+                <span className="text-yellowText link">
+                  <Link>@WOWtheme.co</Link>
+                </span>
+              </p>
+            </button>
+            {/* motion */}
+            <div
+              className="bg-[#313836] 
+        w-[68px] h-[68px] absolute left-3 top-[30px] rounded-full"
+            ></div>
+          </div>
+          <div className="flex flex-col mt-[133px] items-center">
+            {/* Services itmes content */}
+            <div className="">
+              <h3 className="text-xl font-bold text-textWhite">Services</h3>
+              <Link>
+                <p className="text-lowGray my-2 flex gap-1 items-center hover:text-yellowText duration-500 group">
+                  <MdKeyboardDoubleArrowLeft className="group-hover:block hidden" />
+                  <span>Request A Quate</span>
+                </p>
+              </Link>
+              <Link>
+                <p className="text-lowGray  flex gap-1 items-center hover:text-yellowText duration-500 group">
+                  <MdKeyboardDoubleArrowLeft className="group-hover:block hidden" />
+                  <span>Our Services</span>
+                </p>
+              </Link>
+              <Link>
+                <p className="text-lowGray my-2 flex gap-1 items-center hover:text-yellowText duration-500 group">
+                  <MdKeyboardDoubleArrowLeft className="group-hover:block hidden" />
+                  <span>Our What We Do</span>
+                </p>
+              </Link>
+              <Link>
+                <p className="text-lowGray flex gap-1 items-center hover:text-yellowText duration-500 group">
+                  <MdKeyboardDoubleArrowLeft className="group-hover:block hidden" />
+                  <span>Shipments</span>
+                </p>
+              </Link>
+              <Link>
+                <p className="text-lowGray mt-2 flex gap-1 items-center hover:text-yellowText duration-500 group">
+                  <MdKeyboardDoubleArrowLeft className="group-hover:block hidden" />
+                  <span>Pricing Flexibility</span>
+                </p>
+              </Link>
+            </div>
+            {/* location */}
+            <div className="flex flex-col justify-center items-center mt-10">
+              <h3 className="text-xl font-bold text-textWhite">Location</h3>
+              <p className="text-lowGray mt-2 flex gap-1 items-center hover:text-yellowText duration-500 group">
+                55 Main Street, 2nd block <br className="md:block hidden" />
+                Malborne, Australia
+              </p>
+              <h3 className="text-xl font-bold text-textWhite mt-5">Contact</h3>
+              <p className="text-lowGray mt-2 flex gap-1 items-center hover:text-yellowText duration-500 group">
+                support@gmail.com
+              </p>
+              <p className="text-lowGray mt-2 flex gap-1 items-center hover:text-yellowText duration-500 group">
+                +880 (123) 456 88
+              </p>
+            </div>
+          </div>
+        </div>
       </footer>
+      <div className="max-w-[1281px] border-t border-[#213431] py-5 mx-auto flex lg:flex-row flex-col text-center gap-5 lg:gap-0  items-center md:justify-between">
+        <div className="flex items-center gap-1">
+          <img className="w-7 h-7 mr-2" src={logoImg} alt="" />
+          <h4 className="text-3xl font-bold text-textWhite">Charifund</h4>
+        </div>
+        <p className="font-bold text-textWhite">© 2024 <span className="text-yellowText">S7template</span> -Logistic Service. All rights reserved.</p>
+        {/*  */}
+        <div className="flex items-center gap-5">
+          <p className="text-textWhite hover:link">Company</p>
+          <p className="text-textWhite hover:link">Support</p>
+          <p className="text-textWhite hover:link">Privacy</p>
+        </div>
+      </div>
     </section>
   );
 };

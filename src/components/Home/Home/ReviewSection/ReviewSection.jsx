@@ -61,7 +61,7 @@ const ReviewSection = () => {
            nextEl: ".custom-next",
            prevEl: ".custom-prev",
          }}
-         speed={1200}
+         speed={1000}
      
          modules={[Pagination, Navigation]}
          className="mySwiper"

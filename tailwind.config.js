@@ -13,7 +13,8 @@ export default {
         subDescription: "#2f715e",
         blackText: "#121212",
         yellowText: "#fbd454",
-        textWhite: "#f2f2f2"
+        textWhite: "#f2f2f2",
+        lowGray: "#939d9b"
       },
       backgroundColor:{
         yellowBg: "#f8c146",

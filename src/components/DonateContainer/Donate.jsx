@@ -60,7 +60,7 @@ const Donate = () => {
       {/* donation show  card */}
       <div className="relative bg-[#efeceaaa] md:py-16">
         <TitlePage />
-        <div className="max-w-7xl mx-auto px-2 lg:px-0 py-4 mt-2 ">
+        <div className="max-w-[1281px] mx-auto px-2 lg:px-0 py-4 mt-2 ">
           <Swiper
             slidesPerView={1}
             spaceBetween={15}

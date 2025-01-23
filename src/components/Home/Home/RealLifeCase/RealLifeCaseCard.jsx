@@ -2,11 +2,13 @@ import React from "react";
 import { FaArrowRight, FaRegComments } from "react-icons/fa6";
 import { BiUserCircle } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import { IoMdPricetags } from "react-icons/io";
+
 
 const RealLifeCaseCard = ({ life }) => {
   const { author, category, comments, image, title } = life;
   return (
-    <div className="px-5 duration-1000 rounded-xl pt-3 bg-[#ffffff] border hover:border-none group hover:bg-[#2c6b59]">
+    <div className="px-5 duration-1000 rounded-xl pt-3 bg-[#ffffff] border hover:border-[#2c6b59] group hover:bg-[#2c6b59]">
       <div className="flex items-center gap-4">
         <div className="flex items-center gap-2">
             <span className="text-yellowText"><BiUserCircle/></span>
@@ -18,8 +20,13 @@ const RealLifeCaseCard = ({ life }) => {
         </div>
       </div>
       <h2 className="text-[19px] duration-1000 py-3 font-bold text-[#122f2a] group-hover:text-textWhite">{title}</h2>
-      <div className="w-full h-[250px]">
+      <div className="w-full h-[250px] relative">
         <img className="w-full h-full rounded-xl object-cover" src={image} alt="" />
+        <div className="absolute top-2 left-2">
+            <button className="flex items-center gap-2  px-3 py-1  bg-[#0f1b24] text-textWhite duration-500 group-hover:text-blackText group-hover:bg-yellowBg text-sm rounded-3xl">
+                <span><IoMdPricetags/></span>
+                {category}</button>
+        </div>
       </div>
       <Link>
       <div className="py-6  flex items-center gap-2">
