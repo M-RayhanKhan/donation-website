@@ -154,7 +154,7 @@ const Navbar = () => {
       {/* main div */}
       <section id="home"
         className={`${
-          isSticky ? "fixed top-0  " : "relative"
+          isSticky ? "fixed top-0" : "relative"
         } mx-auto w-full  z-50 transfrom duration-700`}
       >
         <div
@@ -273,12 +273,14 @@ const Navbar = () => {
             </div>
           </div>
           <div className="lg:col-span-2 md:col-span-4 w-full  md:block">
+            <Link>
             <button className="bg-yellowBg flex justify-center items-center gap-4 py-[19px] md:py-[25px] md:px-[29px] w-full pl-8  text-[17px] font-bold">
               Get an quate{" "}
               <span className="text-2xl">
                 <MdOutlineArrowCircleRight />
               </span>
             </button>
+            </Link>
           </div>
         </div>
       </section>

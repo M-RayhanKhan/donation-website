@@ -9,7 +9,6 @@ import logoImg from '../../assets/logo.png'
 const Footer = () => {
   const ref = useRef(null);
   const inView = useInView(ref);
-
   return (
     <section className=" bg-gradient-to-r from-[#081e1a] to-[#0b1312]">
       <footer className="max-w-[1281px] mx-auto  py-20 px-2 lg:px-0 flex lg:gap-20 flex-col lg:flex-row">

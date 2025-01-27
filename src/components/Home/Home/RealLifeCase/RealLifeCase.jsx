@@ -61,11 +61,13 @@ const RealLifeCase = () => {
                 }
                 </Swiper>
             </div>
+            <div className='text-center'>
             <Link>
             <motion.button
             animate={{x: [0, 30, 0]}}
             transition={{ease:"linear", duration: 2, repeat: Infinity}}
-            className='bg-yellowBg px-12 py-3 rounded-full flex mt-12 mb-5  mx-auto'>Get A Quote</motion.button></Link>
+            className='bg-yellowBg  px-12 py-3 rounded-full  mt-12 mb-5 '>Get A Quote</motion.button></Link>
+            </div>
         </section>
     );
 };

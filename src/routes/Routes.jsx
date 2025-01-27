@@ -7,6 +7,8 @@ import Service from "../pages/Service";
 import Contact from "../pages/Contact";
 import Portfolio from "../pages/Portfolio";
 import News from "../pages/News";
+import Layout2 from "../components/Layout2/Layout2";
+import Home2 from "../components/Home2/Home2";
 
 
 const router = createBrowserRouter([
@@ -41,6 +43,17 @@ const router = createBrowserRouter([
         },
       ]
     },
+    // Home 2
+    {
+        path: "/home2",
+        element: <Layout2/>,
+        children: [
+            {
+                index: true,
+                element: <Home2/>
+            }
+        ]
+    }
   ]);
 
   export default router

@@ -5,7 +5,6 @@ import {motion} from 'motion/react'
 const TitlePage = () => {
     const ref = useRef(null);
     const inView = useInView(ref, {once:true})
-    console.log(inView);
     return (
         <section className='text-center  flex flex-col justify-center items-center'>
             <motion.div
