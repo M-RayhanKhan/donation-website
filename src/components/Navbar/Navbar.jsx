@@ -101,17 +101,19 @@ const Navbar = () => {
   return (
     <section className="">
       <div className="bg-[#122f2a]  py-2">
-        <div className="max-w-6xl px-2 mx-auto flex  items-center justify-between">
+        <div className="max-w-[1281px] px-2 mx-auto flex  items-center justify-between">
           <div className="flex flex-col md:flex-row  items-center md:gap-8">
             <div className="flex items-center gap-2">
               <AiOutlineMail className="text-yellowText font-bold text-xl" />
               <p className="text-textWhite text-[14px]">support@example.com</p>
             </div>
+       
             <div className="flex items-center gap-2">
               <MdLocalPhone className="text-yellowText font-bold text-xl" />
               <p className="text-textWhite text-[14px]">support@example.com</p>
             </div>
           </div>
+      
           {/* select options */}
           <div className="flex flex-col space-y-2 md:flex-row md:gap-8 items-center">
          <div className="flex gap-4">

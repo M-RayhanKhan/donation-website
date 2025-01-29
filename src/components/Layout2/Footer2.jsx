@@ -17,11 +17,11 @@ import whiteLoveImg from '../../assets/home2/whiteLove.png'
 
 const Footer2 = () => {
   return (
-    <section className="bg-gradient-to-r from-[#023129] to-[#18302c] py-12">
+    <section className="bg-gradient-to-r from-[#023129] to-[#18302c] py-12 relative">
       {/* content main div */}
       <Container className="">
         {/* Subscribe to Our Newsletter section */}
-        <div className="md:flex border-b border-gray-600 pb-[74px]  justify-between">
+        <div className="md:flex border-b border-gray-600 pb-[44px]  justify-between">
           {/*  */}
           <div>
             <h3 className="text-[40px] leading-none font-bold text-textWhite">
@@ -43,7 +43,7 @@ const Footer2 = () => {
           </div>
         </div>
         {/* text content parent div */}
-        <div className="flex mt-[80px] justify-between">
+        <div className="lg:flex lg:gap-0 lg:flex-row mt-[40px] lg:justify-between grid md:grid-cols-3 gap-8 md:gap-16">
           {/* logo content */}
           <div className="">
             <div className="flex items-center gap-1">
@@ -206,7 +206,7 @@ const Footer2 = () => {
             </div>
           </div>
         </div>
-        <div className="flex border-t mt-10 pt-10 border-gray-600 items-center justify-between">
+        <div className="flex flex-col lg:flex-row gap-10 border-t mt-10 pt-10 border-gray-600 items-center text-center lg:justify-between">
             <p className="text-textWhite">Copyright © 2024 Charitia . All Rights Reserved.</p>
             <div className="flex items-center gap-10">
                 <p className="text-[#cfd4d3]">Privacy Policy</p>
@@ -215,6 +215,10 @@ const Footer2 = () => {
             </div>
         </div>
       </Container>
+      <div>
+        <img  className="w-[50px h-[59px] absolute top-32 -left-5" src={loveImg} alt="" />
+        <img  className="w-[60px h-[69px] absolute lg:right-0 lg:bottom-28 bottom-64 right-20" src={whiteLoveImg} alt="" />
+      </div>
     </section>
   );
 };

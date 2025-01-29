@@ -8,7 +8,9 @@ const Layout2 = () => {
     return (
         <div>
             <Navbar2/>
+            <div className="md:min-h-[calc(100vh-682px)] min-h-[calc(100vh-160px)]">
             <Outlet/>
+            </div>
             <Footer2/>
         </div>
     );
