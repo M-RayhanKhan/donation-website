@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import { IoArrowForwardOutline } from "react-icons/io5";
 import { TiArrowLeft, TiArrowRight } from "react-icons/ti";
-import { SiTrustedshops } from "react-icons/si";
 import banner1Img from "../../../../assets/home2/home2Banner1.png";
 import banner2Img from "../../../../assets/home2/banner2.png";
 import banner3Img from "../../../../assets/home2/banner3.png";
-
+import loveImg from "../../../../assets/home2/love copy.png";
+import handImg from "../../../../assets/home2/hand.png";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -18,6 +18,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
+import HeartCare from "../../../Home/Home/HeartCare/HeartCare";
 
 const Banner2 = () => {
   // isActive button toggle
@@ -85,11 +86,11 @@ const Banner2 = () => {
           enabled: false,
         }}
         navigation={{
-            nextEl: ".custom-next",
-            prevEl: ".custom-prev",
-          }}
-          loop={true}
-          speed={700}
+          nextEl: ".custom-next",
+          prevEl: ".custom-prev",
+        }}
+        loop={true}
+        speed={700}
         modules={[Navigation]}
         className="mySwiper"
       >
@@ -97,7 +98,129 @@ const Banner2 = () => {
         <SwiperSlide>
           <div
             style={linearImage}
-            className="w-full  h-[700px] bg-cover bg-center bg-no-repeat flex"
+            className="w-full relative h-[650px] bg-cover bg-center bg-no-repeat flex"
+          >
+            <Container className="flex w-full items-center justify-between">
+              <div className="">
+                <div className="flex items-center gap-2">
+                  <img className="w-5 h-5" src={heartYellow} alt="" />
+                  <p className="caveat font-medium text-yellowText text-xl">
+                    Start donating poor people
+                  </p>
+                </div>
+                <h1 className="text-textWhite font-bold text-4xl md:text-6xl lg:text-[80px] leading-none lg:leading-[70px] mt-2">
+                  Helping Each <br className="hidden lg:block" /> Other Make{" "}
+                  <span className="text-yellowText caveat">World</span>{" "}
+                  <br className="hidden lg:block" /> Better today
+                </h1>
+                {/* buttons */}
+                {/* button */}
+                <div className="md:flex hidden gap-4 mt-5 mx-">
+                  <Link>
+                    {" "}
+                    <motion.button
+                      animate={{ x: [0, 25, 0] }}
+                      transition={{
+                        ease: "linear",
+                        duration: 2,
+                        repeat: Infinity,
+                      }}
+                      onClick={() => handleActiveButton("discord")}
+                      className={`${
+                        isActive.getBtn
+                          ? "flex bg-[#182c29] text-textWhite rounded-full items-center gap-1 px-6 md:px-8 py-4  transition-all duration-300 ease-linear  font-semibold"
+                          : " flex bg-yellowBg text-[#122f2a] rounded-full items-center gap-1 md:px-8 px-6 py-4  transition-all duration-300 ease-linear  font-semibold"
+                      }`}
+                    >
+                      Discover More
+                      <IoArrowForwardOutline className=" -rotate-45" />
+                    </motion.button>
+                  </Link>
+                  {/* get a quote button */}
+                  <Link>
+                    {" "}
+                    <motion.button
+                      animate={{ x: [0, 25, 0] }}
+                      transition={{
+                        ease: "linear",
+                        duration: 2,
+                        repeat: Infinity,
+                        delay: 1,
+                      }}
+                      onClick={() => handleActiveButton("get")}
+                      className={`${
+                        isActive.getBtn
+                          ? " flex bg-yellowBg text-[#122f2a] rounded-full items-center gap-1 md:px-8 px-6 py-4 w-full md:w-auto transition-all duration-300 ease-linear  font-semibold"
+                          : " flex bg-[#182c29] text-textWhite rounded-full items-center gap-1 md:px-8 px-6 py-4  transition-all duration-300 ease-linear  font-semibold "
+                      }`}
+                    >
+                      Get A Quote
+                      <IoArrowForwardOutline className=" -rotate-45" />
+                    </motion.button>
+                  </Link>
+                </div>
+                {/* mobail device responsive */}
+                <div className="flex md:hidden gap-4 mt-5 mx-">
+                  <Link>
+                    {" "}
+                    <motion.button
+                      animate={{ x: [0, 10, 0] }}
+                      transition={{
+                        ease: "linear",
+                        duration: 2,
+                        repeat: Infinity,
+                      }}
+                      onClick={() => handleActiveButton("discord")}
+                      className={`${
+                        isActive.getBtn
+                          ? "flex bg-[#2f454185] text-textWhite rounded-full items-center gap-1 px-6 md:px-8 py-4  transition-all duration-300 ease-linear  font-semibold"
+                          : " flex bg-yellowBg text-[#122f2a] rounded-full items-center gap-1 md:px-8 px-6 py-4  transition-all duration-300 ease-linear  font-semibold"
+                      }`}
+                    >
+                      Discover More
+                      <IoArrowForwardOutline className=" -rotate-45" />
+                    </motion.button>
+                  </Link>
+                  {/* get a quote button */}
+                  <Link>
+                    {" "}
+                    <motion.button
+                      animate={{ x: [0, 10, 0] }}
+                      transition={{
+                        ease: "linear",
+                        duration: 2,
+                        repeat: Infinity,
+                        delay: 1,
+                      }}
+                      onClick={() => handleActiveButton("get")}
+                      className={`${
+                        isActive.getBtn
+                          ? " flex bg-yellowBg text-[#122f2a] rounded-full items-center gap-1 md:px-8 px-6 py-4 w-full md:w-auto transition-all duration-300 ease-linear  font-semibold"
+                          : " flex bg-[#2f454185] text-textWhite rounded-full items-center gap-1 md:px-8 px-6 py-4  transition-all duration-300 ease-linear  font-semibold "
+                      }`}
+                    >
+                      Get A Quote
+                      <IoArrowForwardOutline className=" -rotate-45" />
+                    </motion.button>
+                  </Link>
+                </div>
+              </div>
+            </Container>
+            {/* love img */}
+            <div className="absolute w-[100px] bottom-3 left-2 lg:left-auto lg:right-80 lg:top-[40%]">
+              <img src={loveImg} alt="" />
+            </div>
+            {/* hand img */}
+            <div className="absolute bottom-0 right-16 w-[150px]">
+              <img className="w-full" src={handImg} alt="" />
+            </div>
+          </div>
+        </SwiperSlide>
+        {/* second  */}
+        <SwiperSlide>
+          <div
+            style={linearImage2}
+            className="w-full  h-[650px] bg-cover bg-center bg-no-repeat flex"
           >
             <Container className="flex w-full items-center justify-between">
               <div className="">
@@ -207,125 +330,11 @@ const Banner2 = () => {
             </Container>
           </div>
         </SwiperSlide>
-        {/* second  */}
-        <SwiperSlide>
-          <div
-            style={linearImage2}
-            className="w-full  h-[700px] bg-cover bg-center bg-no-repeat flex"
-          >
-            <Container className="flex w-full items-center justify-between">
-              <div className="">
-                <div className="flex items-center gap-2">
-                  <img className="w-5 h-5" src={heartYellow} alt="" />
-                  <p className="caveat font-medium text-yellowText text-xl">
-                    Start donating poor people
-                  </p>
-                </div>
-                <h1 className="text-textWhite font-bold text-4xl md:text-6xl lg:text-[80px] leading-none lg:leading-[70px] mt-2">
-                  Helping Each <br className="hidden lg:block" /> Other Make{" "}
-                  <span>World</span> <br className="hidden lg:block" /> Better
-                  today
-                </h1>
-                {/* buttons */}
-                {/* button */}
-                <div className="md:flex hidden gap-4 mt-5 mx-">
-                  <Link>
-                    {" "}
-                    <motion.button
-                      animate={{ x: [0, 25, 0] }}
-                      transition={{
-                        ease: "linear",
-                        duration: 2,
-                        repeat: Infinity,
-                      }}
-                      onClick={() => handleActiveButton("discord")}
-                      className={`${
-                        isActive.getBtn
-                          ? "flex bg-[#182c29] text-textWhite rounded-full items-center gap-1 px-6 md:px-8 py-4  transition-all duration-300 ease-linear  font-semibold"
-                          : " flex bg-yellowBg text-[#122f2a] rounded-full items-center gap-1 md:px-8 px-6 py-4  transition-all duration-300 ease-linear  font-semibold"
-                      }`}
-                    >
-                      Discover More
-                      <IoArrowForwardOutline className=" -rotate-45" />
-                    </motion.button>
-                  </Link>
-                  {/* get a quote button */}
-                  <Link>
-                    {" "}
-                    <motion.button
-                      animate={{ x: [0, 25, 0] }}
-                      transition={{
-                        ease: "linear",
-                        duration: 2,
-                        repeat: Infinity,
-                        delay: 1,
-                      }}
-                      onClick={() => handleActiveButton("get")}
-                      className={`${
-                        isActive.getBtn
-                          ? " flex bg-yellowBg text-[#122f2a] rounded-full items-center gap-1 md:px-8 px-6 py-4 w-full md:w-auto transition-all duration-300 ease-linear  font-semibold"
-                          : " flex bg-[#182c29] text-textWhite rounded-full items-center gap-1 md:px-8 px-6 py-4  transition-all duration-300 ease-linear  font-semibold "
-                      }`}
-                    >
-                      Get A Quote
-                      <IoArrowForwardOutline className=" -rotate-45" />
-                    </motion.button>
-                  </Link>
-                </div>
-                {/* mobail device responsive */}
-                <div className="flex md:hidden gap-4 mt-5 mx-">
-                  <Link>
-                    {" "}
-                    <motion.button
-                      animate={{ x: [0, 10, 0] }}
-                      transition={{
-                        ease: "linear",
-                        duration: 2,
-                        repeat: Infinity,
-                      }}
-                      onClick={() => handleActiveButton("discord")}
-                      className={`${
-                        isActive.getBtn
-                          ? "flex bg-[#2f454185] rounded-full items-center gap-1 px-6 md:px-8 py-4  transition-all duration-300 ease-linear  font-semibold"
-                          : " flex bg-yellowBg text-[#122f2a] rounded-full items-center gap-1 md:px-8 px-6 py-4  transition-all duration-300 ease-linear  font-semibold"
-                      }`}
-                    >
-                      Discover More
-                      <IoArrowForwardOutline className=" -rotate-45" />
-                    </motion.button>
-                  </Link>
-                  {/* get a quote button */}
-                  <Link>
-                    {" "}
-                    <motion.button
-                      animate={{ x: [0, 10, 0] }}
-                      transition={{
-                        ease: "linear",
-                        duration: 2,
-                        repeat: Infinity,
-                        delay: 1,
-                      }}
-                      onClick={() => handleActiveButton("get")}
-                      className={`${
-                        isActive.getBtn
-                          ? " flex bg-yellowBg text-[#122f2a] rounded-full items-center gap-1 md:px-8 px-6 py-4 w-full md:w-auto transition-all duration-300 ease-linear  font-semibold"
-                          : " flex bg-[#2f454185] rounded-full items-center gap-1 md:px-8 px-6 py-4  transition-all duration-300 ease-linear  font-semibold "
-                      }`}
-                    >
-                      Get A Quote
-                      <IoArrowForwardOutline className=" -rotate-45" />
-                    </motion.button>
-                  </Link>
-                </div>
-              </div>
-            </Container>
-          </div>
-        </SwiperSlide>
         {/* third  */}
         <SwiperSlide>
           <div
             style={linearImage3}
-            className="w-full  h-[700px] bg-cover bg-center bg-no-repeat flex"
+            className="w-full  h-[650px] bg-cover bg-center bg-no-repeat flex"
           >
             <Container className="flex w-full items-center justify-between">
               <div className="">
@@ -400,7 +409,7 @@ const Banner2 = () => {
                       onClick={() => handleActiveButton("discord")}
                       className={`${
                         isActive.getBtn
-                          ? "flex bg-[#2f454185] rounded-full items-center gap-1 px-6 md:px-8 py-4  transition-all duration-300 ease-linear  font-semibold"
+                          ? "flex bg-[#2f454185] text-textWhite rounded-full items-center gap-1 px-6 md:px-8 py-4  transition-all duration-300 ease-linear  font-semibold"
                           : " flex bg-yellowBg text-[#122f2a] rounded-full items-center gap-1 md:px-8 px-6 py-4  transition-all duration-300 ease-linear  font-semibold"
                       }`}
                     >
@@ -423,7 +432,7 @@ const Banner2 = () => {
                       className={`${
                         isActive.getBtn
                           ? " flex bg-yellowBg text-[#122f2a] rounded-full items-center gap-1 md:px-8 px-6 py-4 w-full md:w-auto transition-all duration-300 ease-linear  font-semibold"
-                          : " flex bg-[#2f454185] rounded-full items-center gap-1 md:px-8 px-6 py-4  transition-all duration-300 ease-linear  font-semibold "
+                          : " flex bg-[#2f454185] text-textWhite rounded-full items-center gap-1 md:px-8 px-6 py-4  transition-all duration-300 ease-linear  font-semibold "
                       }`}
                     >
                       Get A Quote
@@ -436,9 +445,8 @@ const Banner2 = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-
       {/* slider button */}
-      <div className="flex gap-3 flex-col z-20 absolute right-5  bottom-5 lg:right-[70px] lg:top-[280px]">
+      <div className="flex gap-3 flex-col z-20 absolute right-5   bottom-72 md:bottom-[190px] lg:right-[70px] lg:top-[280px]">
         {/* right button */}
         <div>
           <button
@@ -466,6 +474,8 @@ const Banner2 = () => {
           </button>
         </div>
       </div>
+      {/* marquee section */}
+      <HeartCare />
     </section>
   );
 };

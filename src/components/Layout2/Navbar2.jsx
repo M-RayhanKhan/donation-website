@@ -99,7 +99,7 @@ const Navbar2 = () => {
           <div className="flex gap-4">
             <div className="flex  items-center">
               <img className="w-[30px] h-4" src={flag1} alt="" />
-              <select className="bg-[#122f2a] text-[14px] text-[#800080]  outline-none">
+               <select className="bg-[#122f2a] text-[14px] text-[#ffffff]  outline-none">
                 <option>English</option>
                 <option>Bangla</option>
                 <option>Arabic</option>
