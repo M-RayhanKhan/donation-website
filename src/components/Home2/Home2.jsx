@@ -1,5 +1,6 @@
 import Banner2 from "./Home2Component/Banner2/Banner2";
 import Charity from "./Home2Component/Charity/Charity";
+import PoorPeople from "./Home2Component/PoorPeople/PoorPeople";
 
 
 const Home2 = () => {
@@ -7,6 +8,7 @@ const Home2 = () => {
         <div>
             <Banner2/>
             <Charity/>
+            <PoorPeople/>
         </div>
     );
 };
