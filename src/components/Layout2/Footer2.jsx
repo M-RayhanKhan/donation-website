@@ -17,7 +17,7 @@ import whiteLoveImg from '../../assets/home2/whiteLove.png'
 
 const Footer2 = () => {
   return (
-    <section className="bg-gradient-to-r from-[#023129] to-[#18302c] py-12 relative">
+    <section className="bg-gradient-to-r  from-[#023129] to-[#18302c] py-12 relative">
       {/* content main div */}
       <Container className="">
         {/* Subscribe to Our Newsletter section */}

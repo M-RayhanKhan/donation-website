@@ -13,15 +13,15 @@ import { Link } from "react-router-dom";
 const PoorPeople = () => {
   return (
     <section>
-      <Container className="gap-16 my-16 flex flex-col lg:flex-row">
+      <Container className="gap-10 mt-24 mb-5 flex flex-col lg:flex-row">
         {/* left side content */}
-        <div className="lg:w-1/2 relative border border-red-700 ">
+        <div className="lg:w-1/2 relative">
           {/* poor people img 1 */}
           <figure className="md:w-[440px] w-full h-[552px] mx-auto">
             <img src={poorPeopleImg1} alt="" />
           </figure>
           {/* poor people img 2 */}
-          <figure className="md:w-[230px] w-[160px] absolute top-0 left-0 h-[226px] mx-auto">
+          <figure className="md:w-[230px] w-[160px] absolute -top-10 left-0 h-[226px] mx-auto">
             <img src={poorPeopleImg2} alt="" />
           </figure>
           {/* poor people img 3 */}
@@ -29,12 +29,12 @@ const PoorPeople = () => {
             <img src={poorPeopleImg3} alt="" />
           </figure>
           {/* we give button */}
-          <div className="bg-[#046A58] absolute top-[290px] md:top-auto lg:top-[340px] lg:-left-[133px] -left-[133px] text-white lg:bottom-auto md:bottom-5 md:left-48 lg:-rotate-90 -rotate-90 md:rotate-0 py-4 px-4 rounded-xl">
+          <div className="bg-[#046A58] absolute top-[220px] md:top-auto lg:top-[300px] lg:-left-[133px] -left-[143px] text-white lg:bottom-auto md:bottom-5 md:left-48 lg:-rotate-90 -rotate-90 md:rotate-0 py-4 px-4 rounded-xl">
           <h1 className="text-[22px] font-medium">We Give <span className="text-yellowText font-bold">Donations</span> Poor People </h1>
           </div>
         </div>
         {/* right side content */}
-        <div className="lg:w-1/2 border border-green-600">
+        <div className="lg:w-1/2">
           {/* text content */}
           <div className="flex items-center gap-2">
             <img className="w-5 h-5" src={heartGreen} alt="" />
@@ -110,7 +110,9 @@ const PoorPeople = () => {
           </div>
           {/* buttons  */}
           <div className="flex flex-wrap gap-3 items-center md:gap-10 mt-8">
+            <Link>
             <button className="text-title font-semibold text-[14px] bg-yellowBg px-8 py-3 rounded-full">More About Us</button>
+            </Link>
             <div className="flex items-center gap-4"> 
                 <button className="text-xl text-red-600"><FaPhone/></button>
                 <div>

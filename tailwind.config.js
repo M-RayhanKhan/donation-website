@@ -18,7 +18,8 @@ export default {
       },
       backgroundColor:{
         yellowBg: "#f8c146",
-        greenBg: "#122f2a"
+        greenBg: "#122f2a",
+        subGreen: "#2c6b59"
       },
       backgroundImage: {
         bannerLinear: "url('./src/assets/bannerlinear.png')",
