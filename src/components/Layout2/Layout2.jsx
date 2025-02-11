@@ -7,8 +7,10 @@ import Footer2 from "./Footer2";
 const Layout2 = () => {
     return (
         <div>
+            <div className="h-[110px]">
             <Navbar2/>
-            <div className="md:min-h-[calc(100vh-682px)] min-h-[calc(100vh-160px)]">
+            </div>
+            <div className="">
             <Outlet/>
             </div>
             <Footer2/>

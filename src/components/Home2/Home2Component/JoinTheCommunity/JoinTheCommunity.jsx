@@ -89,7 +89,7 @@ const JoinTheCommunity = () => {
     <section
     className="relative"
     >
-      <div    style={JoinTheCommunity}
+      <div style={JoinTheCommunity}
       className="h-[600px] bg-cover bg-center bg-no-repeat ">
         <Container className="pt-20 flex justify-between">
           <div>

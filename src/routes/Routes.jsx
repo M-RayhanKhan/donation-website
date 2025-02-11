@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import MainLayout from "../MainLayout/MainLayout";
 import NotFoundPage from "../components/NotFoundPage/NotFoundPage";
 import Home from "../components/Home/Home/Home";
@@ -9,6 +9,13 @@ import Portfolio from "../pages/Portfolio";
 import News from "../pages/News";
 import Layout2 from "../components/Layout2/Layout2";
 import Home2 from "../components/Home2/Home2";
+
+import Donations from "../Pages2/Donations";
+import Page2 from "../Pages2/Page2";
+import Blog2 from "../Pages2/Blog2";
+import ContactUs from "../Pages2/ContactUs";
+import AboutUs2 from "../Pages2/AboutUs/AboutUs2";
+import { Navigation } from "swiper/modules";
 
 
 const router = createBrowserRouter([
@@ -50,7 +57,31 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
+                element: <Navigate to="/home2/home"/>
+            },
+            {
+                path: '/home2/home',
                 element: <Home2/>
+            },
+            {
+                path: 'aboutUs2',
+                element: <AboutUs2/>
+            },
+            {
+                path: 'donations',
+                element: <Donations/>
+            },
+            {
+                path: "page2",
+                element: <Page2/>
+            },
+            {
+                path: 'blog2',
+                element : <Blog2/>
+            },
+            {
+                path: 'contact2',
+                element : <ContactUs/>
             }
         ]
     }

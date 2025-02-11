@@ -5,20 +5,35 @@ import handLove from "../../../../assets/loveHellp.png";
 import handBall from "../../../../assets/handBall.png";
 import heartGreen from "../../../../assets/heartGreen.png";
 import { FaPhone } from "react-icons/fa6";
-import poorPeopleImg1 from '../../../../assets/home2/poorPeople1.png'
-import poorPeopleImg2 from '../../../../assets/home2/poorPeople2.png'
-import poorPeopleImg3 from '../../../../assets/home2/poorPeople3.png'
+import poorPeopleImg1 from "../../../../assets/home2/poorPeople1.png";
+import poorPeopleImg2 from "../../../../assets/home2/poorPeople2.png";
+import poorPeopleImg3 from "../../../../assets/home2/poorPeople3.png";
 import { Link } from "react-router-dom";
+import animationButton from "../../../../assets/home2/poorAnimationBtn.json";
+import Lottie from "lottie-react";
 
 const PoorPeople = () => {
+  const poorImage1 = {
+    backgroundImage: `
+ linear-gradient(104.25deg, rgba(12, 26, 23, 0) 1.9%, rgba(0, 113, 93, 0.0754386) 18.93%, rgba(0, 113, 93, 0.172779) 29.72%, rgba(0, 113, 93, 0.372684) 83.58%, rgba(0, 113, 93, 0.671715) 109.85%, #00715D 133.89%, #00715D 133.91%, rgba(0, 113, 93, 0.905484) 149.32%),
+ url(${poorPeopleImg1})
+
+    `,
+  };
+
   return (
     <section>
       <Container className="gap-10 mt-24 mb-5 flex flex-col lg:flex-row">
         {/* left side content */}
         <div className="lg:w-1/2 relative">
           {/* poor people img 1 */}
-          <figure className="md:w-[440px] w-full h-[552px] mx-auto">
+          <figure className="md:w-[450px] relative w-full h-[552px] mx-auto">
             <img src={poorPeopleImg1} alt="" />
+            <div className="absolute  top-40 left-1/3 w-[125px] h-[125px]">
+              <Link >
+                <Lottie animationData={animationButton} loop={true}></Lottie>
+              </Link>
+            </div>
           </figure>
           {/* poor people img 2 */}
           <figure className="md:w-[230px] w-[160px] absolute -top-10 left-0 h-[226px] mx-auto">
@@ -30,7 +45,11 @@ const PoorPeople = () => {
           </figure>
           {/* we give button */}
           <div className="bg-[#046A58] absolute top-[220px] md:top-auto lg:top-[300px] lg:-left-[133px] -left-[143px] text-white lg:bottom-auto md:bottom-5 md:left-48 lg:-rotate-90 -rotate-90 md:rotate-0 py-4 px-4 rounded-xl">
-          <h1 className="text-[22px] font-medium">We Give <span className="text-yellowText font-bold">Donations</span> Poor People </h1>
+            <h1 className="text-[22px] font-medium">
+              We Give{" "}
+              <span className="text-yellowText font-bold ">Donations</span> Poor
+              People{" "}
+            </h1>
           </div>
         </div>
         {/* right side content */}
@@ -111,14 +130,18 @@ const PoorPeople = () => {
           {/* buttons  */}
           <div className="flex flex-wrap gap-3 items-center md:gap-10 mt-8">
             <Link>
-            <button className="text-title font-semibold text-[14px] bg-yellowBg px-8 py-3 rounded-full">More About Us</button>
+              <button className="text-title font-semibold text-[14px] bg-yellowBg px-8 py-3 rounded-full">
+                More About Us
+              </button>
             </Link>
-            <div className="flex items-center gap-4"> 
-                <button className="text-xl text-red-600"><FaPhone/></button>
-                <div>
-                    <p className="text-description">Phone: </p>
-                    <p className="text-blackText font-bold">+236 (456) 896 22</p>
-                </div>
+            <div className="flex items-center gap-4">
+              <button className="text-xl text-red-600">
+                <FaPhone />
+              </button>
+              <div>
+                <p className="text-description">Phone: </p>
+                <p className="text-blackText font-bold">+236 (456) 896 22</p>
+              </div>
             </div>
           </div>
         </div>

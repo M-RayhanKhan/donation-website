@@ -19,17 +19,25 @@ const Navbar2 = () => {
   const [state, setState] = useState(false);
   const links = (
     <>
-      <NavLink
-        to="/home2"
+    <div className="group  relative">
+    <NavLink
+        to="/home2/home"
         className={({ isActive }) =>
           isActive ? "text-[#122f2a] font-bold" : "text-[#800080] hover:text-[#122f2a] font-bold"
         }
       >
-        Home
+      <p>Home2</p>
       </NavLink>
+      <div className="absolute -left-5 z-[200] pt-4 top-6 hidden group-hover:block h-[60px] w-[180px]">
+        <Link to="/">
+      <p className="text-xl bg-green-600 px-4 py-2 shadow-xl">Home1</p>
+        </Link>
+      </div>
+    </div>
+    
 
       <NavLink
-        to="/about"
+        to="/home2/aboutUs2"
         className={({ isActive }) =>
           isActive ? "text-[#122f2a] font-bold" : "text-[#800080] hover:text-[#122f2a] font-bold"
         }
@@ -38,7 +46,7 @@ const Navbar2 = () => {
       </NavLink>
 
       <NavLink
-        to="/donations"
+        to="/home2/donations"
         className={({ isActive }) =>
           isActive ? "text-[#122f2a] font-bold" : "text-[#800080] hover:text-[#122f2a] font-bold"
         }
@@ -47,7 +55,7 @@ const Navbar2 = () => {
       </NavLink>
 
       <NavLink
-        to="/pages"
+        to="/home2/page2"
         className={({ isActive }) =>
           isActive ? "text-[#122f2a] font-bold" : "text-[#800080] hover:text-[#122f2a] font-bold"
         }
@@ -56,7 +64,7 @@ const Navbar2 = () => {
       </NavLink>
 
       <NavLink
-        to="/blogs"
+        to="/home2/blog2"
         className={({ isActive }) =>
           isActive ? "text-[#122f2a] font-bold" : "text-[#800080] hover:text-[#122f2a] font-bold"
         }
@@ -65,7 +73,7 @@ const Navbar2 = () => {
       </NavLink>
 
       <NavLink
-        to="/contact"
+        to="/home2/contact2"
         className={({ isActive }) =>
           isActive ? "text-[#122f2a] font-bold" : "text-[#800080] hover:text-[#122f2a] font-bold"
         }
@@ -75,7 +83,7 @@ const Navbar2 = () => {
     </>
   );
   return (
-    <section className="">
+    <section className="fixed w-full  z-[999] bg-white">
       {/* topbar */}
       <div className="max-w-[1316px] rounded-b-xl bg-[#122f2a]  py-1 px-4 mx-auto flex  items-center justify-between">
         <div className="flex flex-col md:flex-row  items-center md:gap-8">

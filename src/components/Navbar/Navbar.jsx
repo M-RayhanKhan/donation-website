@@ -36,16 +36,21 @@ const Navbar = () => {
   }, []);
   const links = (
     <>
-      <NavLink
+    <div className="group relative">
+    <NavLink
         to="/"
         className={({ isActive }) =>
-          isActive
-            ? "text-yellow-400 "
-            : " text-blackText hover:text-yellow-400"
+          isActive ? "text-[#122f2a] font-bold" : "text-[#800080] hover:text-[#122f2a] font-bold"
         }
       >
-        Home
+      <p>Home</p>
       </NavLink>
+      <div className="absolute -left-5 z-[200] pt-4 top-5 hidden group-hover:block h-[60px] w-[180px]">
+        <Link to="/home2">
+      <p className="text-xl bg-green-600 px-4 py-2 shadow-xl">Home2</p>
+        </Link>
+      </div>
+    </div>
       <NavLink
         to="/pages"
         className={({ isActive }) =>
@@ -107,54 +112,55 @@ const Navbar = () => {
               <AiOutlineMail className="text-yellowText font-bold text-xl" />
               <p className="text-textWhite text-[14px]">support@example.com</p>
             </div>
-       
+
             <div className="flex items-center gap-2">
               <MdLocalPhone className="text-yellowText font-bold text-xl" />
               <p className="text-textWhite text-[14px]">support@example.com</p>
             </div>
           </div>
-      
+
           {/* select options */}
           <div className="flex flex-col space-y-2 md:flex-row md:gap-8 items-center">
-         <div className="flex gap-4">
-         <div className="flex  items-center">
-              <img className="w-[30px] h-4" src={flag1} alt="" />
-              <select className="bg-[#122f2a] text-[14px] text-white  outline-none">
-                <option>English</option>
-                <option>Bangla</option>
-                <option>Arabic</option>
-                <option>Hindi</option>
-              </select>
+            <div className="flex gap-4">
+              <div className="flex  items-center">
+                <img className="w-[30px] h-4" src={flag1} alt="" />
+                <select className="bg-[#122f2a] text-[14px] text-white  outline-none">
+                  <option>English</option>
+                  <option>Bangla</option>
+                  <option>Arabic</option>
+                  <option>Hindi</option>
+                </select>
+              </div>
+              <div className="">
+                <select className="bg-[#122f2a] text-[14px] text-white  outline-none">
+                  <option>USD</option>
+                  <option>BD</option>
+                  <option>SA</option>
+                  <option>IN</option>
+                </select>
+              </div>
             </div>
-            <div className="">
-              <select className="bg-[#122f2a] text-[14px] text-white  outline-none">
-                <option>USD</option>
-                <option>BD</option>
-                <option>SA</option>
-                <option>IN</option>
-              </select>
-            </div>
-         </div>
             {/* icons */}
             <div className="flex items-center gap-5">
               <Link>
-              <FaFacebookF className="text-[#bdc5c3] text-[15px] hover:text-yellowText"/>
+                <FaFacebookF className="text-[#bdc5c3] text-[15px] hover:text-yellowText" />
               </Link>
               <Link>
-              <BiLogoVenmo className="text-[#bdc5c3] hover:text-yellowText"/>
+                <BiLogoVenmo className="text-[#bdc5c3] hover:text-yellowText" />
               </Link>
               <Link>
-              <FaTwitter className="text-[#bdc5c3] hover:text-yellowText"/>
+                <FaTwitter className="text-[#bdc5c3] hover:text-yellowText" />
               </Link>
               <Link>
-              <FaLinkedinIn className="text-[#bdc5c3] hover:text-yellowText"/>
+                <FaLinkedinIn className="text-[#bdc5c3] hover:text-yellowText" />
               </Link>
             </div>
           </div>
         </div>
       </div>
       {/* main div */}
-      <section id="home"
+      <section
+        id="home"
         className={`${
           isSticky ? "fixed top-0" : "relative"
         } mx-auto w-full  z-50 transfrom duration-700`}
@@ -166,7 +172,7 @@ const Navbar = () => {
           {/*  */}
           {/* navbar */}
           <div className="bg-[#ffffff] gap-10  lg:col-span-10 md:col-span-8  w-full pl-2 md:pl-4 py-4 flex items-center">
-            {/* logo */}
+            {/* logo mobile*/}
             <div className="flex items-center ">
               <div className="mr-4 md:block lg:hidden  ">
                 <div onClick={() => setState(!state)}>
@@ -184,16 +190,25 @@ const Navbar = () => {
                       state ? "left-0 " : "-left-40"
                     }`}
                   >
-                    <NavLink
-                      to="/"
-                      className={({ isActive }) =>
-                        isActive
-                          ? "text-yellow-400 "
-                          : " text-textWhite hover:text-yellow-400"
-                      }
-                    >
-                      Home
-                    </NavLink>
+                    <div className="group relative">
+                      <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                          isActive
+                            ? "text-yellow-400  "
+                            : " text-textWhite hover:text-yellow-400"
+                        }
+                      >
+                        <p>Home</p>
+                      </NavLink>
+                      <div className="absolute z-[200] pt-5 top-2 hidden group-hover:block h-[100px] w-[100px]">
+                        <Link to="/home2">
+                          <p className="text-xl bg-green-600 px-4 py-2 shadow-xl">
+                            Home2
+                          </p>
+                        </Link>
+                      </div>
+                    </div>
                     <NavLink
                       to="/pages"
                       className={({ isActive }) =>
@@ -276,12 +291,12 @@ const Navbar = () => {
           </div>
           <div className="lg:col-span-2 md:col-span-4 w-full  md:block">
             <Link>
-            <button className="bg-yellowBg flex justify-center items-center gap-4 py-[19px] md:py-[25px] md:px-[29px] w-full pl-8  text-[17px] font-bold">
-              Get an quate{" "}
-              <span className="text-2xl">
-                <MdOutlineArrowCircleRight />
-              </span>
-            </button>
+              <button className="bg-yellowBg flex justify-center items-center gap-4 py-[19px] md:py-[25px] md:px-[29px] w-full pl-8  text-[17px] font-bold">
+                Get an quate{" "}
+                <span className="text-2xl">
+                  <MdOutlineArrowCircleRight />
+                </span>
+              </button>
             </Link>
           </div>
         </div>
