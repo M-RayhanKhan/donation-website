@@ -9,7 +9,13 @@
       "raised":8500,
       "goal": 10000
     },
-    "image": "https://t4.ftcdn.net/jpg/08/98/05/81/240_F_898058162_uAfjCI3d1zEuZYUqUS4QKi1iZBwLh7LY.jpg"
+    "image": "https://t4.ftcdn.net/jpg/08/98/05/81/240_F_898058162_uAfjCI3d1zEuZYUqUS4QKi1iZBwLh7LY.jpg",
+    "img1": "https://i.ibb.co.com/LX5ZzF9f/Dd1.png",
+    "img2": "https://i.ibb.co.com/GYrC2hm/Dd2.png",
+    "img3": "https://i.ibb.co.com/Hph1pbMq/Dd3.png",
+    "title1": "Give African Children a Good Education",
+    "description2": "Education is the key to unlocking the potential of African children. By providing access to quality schooling, we can empower them to break the cycle of poverty and build a brighter future.",
+    "summary": "Education transforms lives. For African children, it is a pathway out of poverty and a tool for empowerment. Through charity and support, we can ensure that every child has the opportunity to learn, grow, and achieve their dreams."
   },
   {
     "id": 2,
@@ -21,7 +27,13 @@
       "raised": 3000,
       "goal": 5000
     },
-    "image": "https://i.ibb.co.com/d2Fw469/3.png"
+    "image": "https://i.ibb.co.com/d2Fw469/3.png",
+    "img1": "https://t4.ftcdn.net/jpg/12/49/78/47/240_F_1249784751_c5a32q0QcaZeqNT0ESEjsdc6Qz9zvd8a.jpg",
+    "img2": "https://t4.ftcdn.net/jpg/10/18/98/93/240_F_1018989364_HwXEYcPVLvuy3DfiCT59fqXod2Y3RnLI.jpg",
+    "img3": "https://t3.ftcdn.net/jpg/11/71/82/36/240_F_1171823670_ESsODOPhMlre3jWYW0iqrJD3JWUZAZON.jpg",
+    "title1": "Charity and Diversion",
+    "description2": "Charity involves providing financial or material support to causes and organizations. It allows individuals to contribute to safeguarding social well-being and creating positive change.",
+    "summary": "Charity is a powerful way to support communities in need. By giving financial or material aid, individuals and organizations can help address social challenges and improve lives. Together, we can make a difference."
   },
   {
     "id": 3,
@@ -33,7 +45,13 @@
       "raised": 2000,
       "goal": 5000
     },
-    "image": "https://i.ibb.co.com/gMd6szr/1.png "
+    "image": "https://i.ibb.co.com/gMd6szr/1.png ",
+    "img1": "https://t4.ftcdn.net/jpg/11/35/33/61/240_F_1135336137_hnp3yTtigjGr1s36yB8nTj9N2DuyxcZH.jpg",
+    "img2": "https://t4.ftcdn.net/jpg/10/67/11/27/240_F_1067112708_pcskW6y0WpkZI0CruVIeBStasvZcDUCj.jpg",
+    "img3": "https://t3.ftcdn.net/jpg/09/77/69/16/240_F_977691613_1iFJkzSjrMWDexjhx6ESRLc1s0rvslDH.jpg",
+    "title1": "Improve Through Charity",
+    "description2": "Charity initiatives aim to improve the lives of those in need. By supporting education, healthcare, and community development, we can create lasting change.",
+    "summary": "Charity is a catalyst for improvement. Through targeted efforts, we can address critical issues like education, health, and poverty, ensuring a better future for African children and their communities."
   },
   {
     "id": 4,
@@ -45,7 +63,13 @@
       "raised": 3750,
       "goal": 5000
     },
-    "image": "https://i.ibb.co.com/Jv7kBXt/4.png"
+    "image": "https://i.ibb.co.com/Jv7kBXt/4.png",
+    "img1": "https://t4.ftcdn.net/jpg/09/26/18/97/240_F_926189784_tzPQUxdpjoCFgZkxh7vdSdtLydIU37jx.jpg",
+    "img2": "https://t3.ftcdn.net/jpg/11/17/50/26/240_F_1117502651_Smg2r9p9OWhVt8X1VNkyrJXhsMXlCrno.jpg",
+    "img3": "https://t3.ftcdn.net/jpg/11/55/95/34/360_F_1155953470_e6FvCedNpJkAlCdGgiwzdxTPJBHVdD0g.webp",
+    "title1": "Create Hope, Changing Lives",
+    "description2": "Hope is a powerful force that drives change. By creating opportunities for African children, we can transform their lives and inspire a brighter future.",
+    "summary": "Hope is the foundation of change. Through education, healthcare, and community support, we can create a world where African children thrive and reach their full potential."
   },
   {
     "id": 5,
@@ -57,7 +81,13 @@
       "raised": 9000,
       "goal": 10000
     },
-    "image": "https://t3.ftcdn.net/jpg/10/04/68/50/240_F_1004685049_KDkH0qBIzAUH6cEbCnDlkgCHPSzgIa68.jpg"
+    "image": "https://t3.ftcdn.net/jpg/10/04/68/50/240_F_1004685049_KDkH0qBIzAUH6cEbCnDlkgCHPSzgIa68.jpg",
+    "img1": "https://t3.ftcdn.net/jpg/12/58/58/66/240_F_1258586611_FDgkxWwyhJ5uk14vJTFuK60k9zSd0W6d.jpg",
+    "img2": "https://t4.ftcdn.net/jpg/10/84/64/55/240_F_1084645567_RDh53ONwYHfFmIeU9gs1V5oRtw6PLUmq.jpg",
+    "img3": "https://t3.ftcdn.net/jpg/11/39/69/06/240_F_1139690613_Fq1SL496UQgFNeuPtWmsVByXqfXbwdov.jpg",
+    "title1": "Manage Communities",
+    "description2": "Effective community management is essential for sustainable development. By working together, we can address challenges and create thriving communities for African children.",
+    "summary": "Communities are the heart of development. Through collaboration and support, we can manage resources effectively, ensuring that African children have access to education, healthcare, and opportunities."
   },
   {
     "id": 6,
@@ -69,7 +99,13 @@
       "raised": 2500,
       "goal": 5000
     },
-    "image": "https://t3.ftcdn.net/jpg/11/27/63/94/240_F_1127639406_AZyOLvYWJNSigtxtxaabZgtkkSK7pV1b.jpg"
+    "image": "https://t3.ftcdn.net/jpg/11/27/63/94/240_F_1127639406_AZyOLvYWJNSigtxtxaabZgtkkSK7pV1b.jpg",
+    "img1": "https://t4.ftcdn.net/jpg/11/20/93/83/240_F_1120938314_3ujASb24eVz2AMLiNg51LI7O1euxAt6Z.jpg",
+    "img2": "https://t3.ftcdn.net/jpg/09/79/88/52/240_F_979885200_2P8HPG0rLBtxlBCDWd7a5XxFHk5kYRoo.jpg",
+    "img3": "https://t3.ftcdn.net/jpg/09/81/70/68/240_F_981706838_92WVML4DJiFVnXi33Xaqrpi37UTniAbt.jpg",
+    "title1": "Together We Can",
+    "description2": "Unity is strength. By coming together, we can overcome challenges and create a better future for African children and their communities.",
+    "summary": "Together, we can achieve great things. Through collective efforts, we can provide education, healthcare, and support to African children, ensuring a brighter and more equitable future."
   },
   {
     "id": 7,
@@ -81,7 +117,13 @@
       "raised": 1000,
       "goal": 5000
     },
-    "image": "https://t3.ftcdn.net/jpg/09/07/02/44/240_F_907024458_Qbgb4QP4TskmVGcaAo0mvZL0UGeJVed2.jpg"
+    "image": "https://t3.ftcdn.net/jpg/09/07/02/44/240_F_907024458_Qbgb4QP4TskmVGcaAo0mvZL0UGeJVed2.jpg",
+    "img1": "https://t3.ftcdn.net/jpg/09/81/70/68/240_F_981706838_92WVML4DJiFVnXi33Xaqrpi37UTniAbt.jpg",
+    "img2": "hhttps://t4.ftcdn.net/jpg/11/29/99/21/240_F_1129992179_lztOFEbttBcPNg28XViO6EEbUwdgzh6o.jpg",
+    "img3": "https://t4.ftcdn.net/jpg/10/68/32/37/240_F_1068323787_Nz5WEH1YcV9ASnmJ9B56EdlexBQipD2g.jpg",
+    "title1": "Compassion in Action",
+    "description2": "Compassion drives meaningful change. By taking action, we can address the needs of African children and create a more just and caring world.",
+    "summary": "Compassion is the foundation of positive change. Through acts of kindness and support, we can improve the lives of African children and build a future filled with hope and opportunity."
   },
   {
     "id": 8,
@@ -93,6 +135,14 @@
       "raised": 3500,
       "goal": 5000
     },
-    "image": "https://t4.ftcdn.net/jpg/09/26/18/97/240_F_926189784_tzPQUxdpjoCFgZkxh7vdSdtLydIU37jx.jpg"
+    "image": "https://t4.ftcdn.net/jpg/09/26/18/97/240_F_926189784_tzPQUxdpjoCFgZkxh7vdSdtLydIU37jx.jpg",
+    "img1": "https://t3.ftcdn.net/jpg/08/70/87/14/240_F_870871422_eY6Ns3zoTdP6Tty7Y6ZUSg0Gsnbi6krf.jpg",
+    "img2": "https://t4.ftcdn.net/jpg/07/96/43/71/240_F_796437126_5YDtyIs1Rto9whl3W8MbQ0p3I9FpVYCr.jpg",
+    "img3": "https://t4.ftcdn.net/jpg/09/06/11/71/240_F_906117174_VCTpodqVGvTv1FeyB6U7tIUN8l5nBGgz.jpg",
+    "title1": "Every Act Counts",
+    "description2": "Every effort, no matter how small, makes a difference. By contributing to the well-being of African children, we can create a ripple effect of positive change.",
+    "summary": "Every act of kindness matters. Whether through education, healthcare, or community support, each contribution helps African children thrive and build a better future."
   }
 ]
+
+

@@ -3,18 +3,16 @@ import heartGreen from "../../../../assets/heart (1) 1.png";
 import Container from "../../../Container";
 import loveImg from "../../../../assets/home2/love copy 2.png";
 import errorImg from "../../../../assets/home2/Error.png";
-import poorImg from '../../../../assets/home2/poorImg.png';
-import poorLove from '../../../../assets/home2/poorLove.png';
-import vector from '../../../../assets/home2/Vector.png'
+import poorImg from "../../../../assets/home2/poorImg.png";
+import poorLove from "../../../../assets/home2/poorLove.png";
+import vector from "../../../../assets/home2/Vector.png";
 import { useState } from "react";
 
 import { RiArrowRightUpLine } from "react-icons/ri";
 
-import Swal from 'sweetalert2'
-
+import Swal from "sweetalert2";
 
 const JoinTheCommunity = () => {
-
   const [money, setMoney] = useState(0);
 
   const donateMoney = [
@@ -29,10 +27,9 @@ const JoinTheCommunity = () => {
     const donate = parseFloat(donateMoney);
     //  console.log(donate);
     if (isNaN(donate)) {
-     
       alert("Coustom baby ekhon dan kora jave na.");
     } else {
-        setMoney(donate);
+      setMoney(donate);
     }
   };
 
@@ -42,55 +39,53 @@ const JoinTheCommunity = () => {
 
   const handleSuccess = (money, setMoney) => {
     if (money > 0) {
-        const swalWithBootstrapButtons = Swal.mixin({
-            customClass: {
-              confirmButton: "btn btn-success",
-              cancelButton: "btn btn-danger"
-            },
-            buttonsStyling: false
-          });
-          swalWithBootstrapButtons.fire({
-            title: "Are you sure?",
-            text: "Do you want to donate?",
-            icon: "warning",
-            showCancelButton: true,
-            confirmButtonText: "Yes",
-            cancelButtonText: "No, cancel!",
-            reverseButtons: true
-          }).then((result) => {
-            if (result.isConfirmed) {
-              swalWithBootstrapButtons.fire({
-                title: "Success",
-                text: "Your donation is complete",
-                icon: "success"
-              });
-            } else if (
-              /* Read more about handling dismissals below */
-              result.dismiss === Swal.DismissReason.cancel
-            ) {
-              swalWithBootstrapButtons.fire({
-                title: "Cancelled",
-                text: "You didn't donate money",
-                icon: "error"
-              });
-            }
-            setMoney('')
-          });
-
-    }else{
-        alert('please added money')
+      const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+          confirmButton: "btn btn-success",
+          cancelButton: "btn btn-danger",
+        },
+        buttonsStyling: false,
+      });
+      swalWithBootstrapButtons
+        .fire({
+          title: "Are you sure?",
+          text: "Do you want to donate?",
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonText: "Yes",
+          cancelButtonText: "No, cancel!",
+          reverseButtons: true,
+        })
+        .then((result) => {
+          if (result.isConfirmed) {
+            swalWithBootstrapButtons.fire({
+              title: "Success",
+              text: "Your donation is complete",
+              icon: "success",
+            });
+          } else if (
+            /* Read more about handling dismissals below */
+            result.dismiss === Swal.DismissReason.cancel
+          ) {
+            swalWithBootstrapButtons.fire({
+              title: "Cancelled",
+              text: "You didn't donate money",
+              icon: "error",
+            });
+          }
+          setMoney("");
+        });
+    } else {
+      alert("please added money");
     }
-    
-
-
-  }
+  };
 
   return (
-    <section
-    className="relative"
-    >
-      <div style={JoinTheCommunity}
-      className="h-[600px] bg-cover bg-center bg-no-repeat ">
+    <section className="relative">
+      <div
+        style={JoinTheCommunity}
+        className="h-[600px] bg-cover bg-center bg-no-repeat "
+      >
         <Container className="pt-20 flex justify-between">
           <div>
             <div className="flex items-center gap-2">
@@ -111,11 +106,10 @@ const JoinTheCommunity = () => {
             <img className="w-[293px]" src={loveImg} alt="" />
           </div>
         </Container>
-  
       </div>
       <Container className="lg:-mt-[350px] -mt-[290px]  mb-24 lg:h-[480px] ">
-              {/* card container */}
-              <div className="flex  flex-col lg:flex-row bg-[#ffffff]  rounded-3xl">
+        {/* card container */}
+        <div className="flex  flex-col lg:flex-row bg-[#ffffff]  rounded-3xl">
           {/* text content */}
           <div className="lg:w-[55%] space-y-4 py-5 md:px-10 px-2">
             <h1 className="text-[30px] font-bold text-title">
@@ -275,20 +269,29 @@ const JoinTheCommunity = () => {
                 </div>
                 {/* donate button */}
                 <div>
-                  <button onClick={() =>handleSuccess(money, setMoney)} className="bg-[#2c6b59] mt-6 text-textWhite md:px-10 w-full md:w-auto py-3 rounded-[30px] text-[14px] font-bold flex items-center justify-center"><span>Donate Now</span> <RiArrowRightUpLine className="text-[18px]"/></button>
+                  <button
+                    onClick={() => handleSuccess(money, setMoney)}
+                    className="bg-[#2c6b59] mt-6 text-textWhite md:px-10 w-full md:w-auto py-3 rounded-[30px] text-[14px] font-bold flex items-center justify-center"
+                  >
+                    <span>Donate Now</span>{" "}
+                    <RiArrowRightUpLine className="text-[18px]" />
+                  </button>
                 </div>
               </div>
             </div>
           </div>
           {/* image content */}
           <div className="lg:w-[45%] h-[480px]   flex justify-end ">
-            <img className=" lg:w-[90%] h-full rounded-r-3xl object-cover"  src={poorImg} alt="" />
-          
+            <img
+              className=" lg:w-[90%] h-full rounded-r-3xl object-cover"
+              src={poorImg}
+              alt=""
+            />
           </div>
-        </div>  
+        </div>
       </Container>
       <div className="absolute  -bottom-16 left-0 -z-10 ">
-      <img className="h-[200px]" src={vector} alt="" />
+        <img className="h-[200px]" src={vector} alt="" />
       </div>
     </section>
   );

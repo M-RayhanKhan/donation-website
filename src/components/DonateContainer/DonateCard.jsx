@@ -1,7 +1,8 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 const DonateCard = ({ items }) => {
-  const { title, category, description, progress, image } = items;
+  const {id, title, category, description, progress, image } = items;
   return (
     <div className="rounded-[14px] group relative px-2.5 pt-2.5 bg-base-100 ">
       <figure className="w-full h-[212px]">
@@ -33,7 +34,7 @@ const DonateCard = ({ items }) => {
               </span>{" "}
             </h6>
           </div>
-          <Link>
+          <Link to={`/home2/donateDetails/${id}`}>
             <button className="hover:bg-greenBg duration-1000  mt-2 px-7 text-[14px] font-bold py-[10px] rounded-full border border-[#122f2a] text-[#122f2a] hover:text-textWhite box-border  ">
               Donate Now
             </button>

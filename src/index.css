@@ -43,3 +43,6 @@ html{
     background: linear-gradient(to bottom, #081f1b, #f4da91);
 }
 
+.patience-game{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

@@ -40,7 +40,8 @@ const Navbar = () => {
     <NavLink
         to="/"
         className={({ isActive }) =>
-          isActive ? "text-[#122f2a] font-bold" : "text-[#800080] hover:text-[#122f2a] font-bold"
+          isActive ? "text-yellow-400 "
+            : " text-blackText hover:text-yellow-400"
         }
       >
       <p>Home</p>

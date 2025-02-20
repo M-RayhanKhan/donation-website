@@ -5,11 +5,17 @@ import SuperClient2 from "../../components/Home2/Home2Component/SupperClient2";
 import Feedback from "../../components/Home2/Home2Component/Feedback/Feedback";
 import AccordionSection from "../../components/Home/Home/Faq/AccordionSection";
 import MessageSend from "./MessageSend";
+import OurMission from "../../components/Home2/Home2Component/OurMission/OurMission";
+import MarqueeSection from "../../components/Home/Home/Marquee.jsx /MarqueeSection";
+import { Helmet } from "react-helmet-async";
 
 const AboutUs2 = () => {
   // const { donate } = useContext(DonateContaxt);
   return (
     <section>
+           <Helmet>
+              <title>Donate | About Us </title>
+            </Helmet>
       <GlobalSection title="About Us" />
       {/* poor people image */}
       <div>
@@ -21,8 +27,14 @@ const AboutUs2 = () => {
       <AccordionSection />
       {/* feedback section*/}
       <Feedback />
-      {/* send message seciton */}
-      <MessageSend/>
+      {/* send message section */}
+      <MessageSend />
+      {/* misstion section */}
+      <div className="my-16">
+        <OurMission />
+      </div>
+      {/* merquee section*/}
+      <MarqueeSection/>
     </section>
   );
 };

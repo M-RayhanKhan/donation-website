@@ -24,7 +24,7 @@ const MessageSend = () => {
   return (
     <section
       style={sendMessage}
-      className="md:h-[650px] w-full bg-cover  bg-no-repeat "
+      className="md:h-[650px] relative w-full bg-cover  bg-no-repeat "
     >
       <Container className="flex h-full flex-col lg:flex-row">
         <div className="lg:w-1/2"></div>
@@ -66,6 +66,7 @@ const MessageSend = () => {
          </form>
         </div>
       </Container>
+      <img className="absolute top-0 h-[650px] lg:block hidden" src={sideImg} alt="" />
     </section>
   );
 };

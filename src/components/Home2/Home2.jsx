@@ -1,3 +1,4 @@
+import { Helmet, HelmetData } from "react-helmet-async";
 import Banner2 from "./Home2Component/Banner2/Banner2";
 import Charity from "./Home2Component/Charity/Charity";
 import CustomerFeedback from "./Home2Component/Customer/CustomerFeedback";
@@ -10,23 +11,25 @@ import PoorPeople from "./Home2Component/PoorPeople/PoorPeople";
 import SuperClient2 from "./Home2Component/SupperClient2";
 import SupportUs from "./Home2Component/SupportUs/SupportUs";
 
-
 const Home2 = () => {
-    return (
-        <div>
-            <Banner2/>
-            <Charity/>
-            <PoorPeople/>
-            <Donate2/>
-            <SupportUs/>
-            <SuperClient2/>
-            <JoinTheCommunity/>
-            <Feedback/>
-            <OldPeople/>
-            <OurMission/>
-            <CustomerFeedback/>
-        </div>
-    );
+  return (
+    <div>
+      <Helmet>
+        <title>Donate | Home</title>
+      </Helmet>
+      <Banner2 />
+      <Charity />
+      <PoorPeople />
+      <Donate2 />
+      <SupportUs />
+      <SuperClient2 />
+      <JoinTheCommunity />
+      <Feedback />
+      <OldPeople />
+      <OurMission />
+      <CustomerFeedback />
+    </div>
+  );
 };
 
 export default Home2;

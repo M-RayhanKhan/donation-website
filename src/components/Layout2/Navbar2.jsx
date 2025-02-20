@@ -12,34 +12,36 @@ import bgImg from "../../assets/home2/bg (1).png";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
-import kataChiraImg from '../../assets/home2/whiteBgKatacira.png'
-
+import kataChiraImg from "../../assets/home2/whiteBgKatacira.png";
 
 const Navbar2 = () => {
   const [state, setState] = useState(false);
   const links = (
     <>
-    <div className="group  relative">
-    <NavLink
-        to="/home2/home"
-        className={({ isActive }) =>
-          isActive ? "text-[#122f2a] font-bold" : "text-[#800080] hover:text-[#122f2a] font-bold"
-        }
-      >
-      <p>Home2</p>
-      </NavLink>
-      <div className="absolute -left-5 z-[200] pt-4 top-6 hidden group-hover:block h-[60px] w-[180px]">
-        <Link to="/">
-      <p className="text-xl bg-green-600 px-4 py-2 shadow-xl">Home1</p>
-        </Link>
+      <div className="group  relative">
+        <NavLink
+          to="/home2/home"
+          className={({ isActive }) =>
+            isActive
+              ? "text-[#122f2a] font-bold"
+              : "text-[#800080] hover:text-[#122f2a] font-bold"
+          }
+        >
+          <p>Home2</p>
+        </NavLink>
+        <div className="absolute -left-5 z-[200] pt-4 top-6 hidden group-hover:block h-[60px] w-[180px]">
+          <Link to="/">
+            <p className="text-xl bg-green-600 px-4 py-2 shadow-xl">Home1</p>
+          </Link>
+        </div>
       </div>
-    </div>
-    
 
       <NavLink
         to="/home2/aboutUs2"
         className={({ isActive }) =>
-          isActive ? "text-[#122f2a] font-bold" : "text-[#800080] hover:text-[#122f2a] font-bold"
+          isActive
+            ? "text-[#122f2a] font-bold"
+            : "text-[#800080] hover:text-[#122f2a] font-bold"
         }
       >
         About Us
@@ -48,25 +50,47 @@ const Navbar2 = () => {
       <NavLink
         to="/home2/donations"
         className={({ isActive }) =>
-          isActive ? "text-[#122f2a] font-bold" : "text-[#800080] hover:text-[#122f2a] font-bold"
+          isActive
+            ? "text-[#122f2a] font-bold"
+            : "text-[#800080] hover:text-[#122f2a] font-bold"
         }
       >
         Donations
       </NavLink>
 
-      <NavLink
-        to="/home2/page2"
-        className={({ isActive }) =>
-          isActive ? "text-[#122f2a] font-bold" : "text-[#800080] hover:text-[#122f2a] font-bold"
-        }
-      >
-        Pages
-      </NavLink>
+      <div className="group  relative">
+        <NavLink
+          to="/home2/page2"
+          className={({ isActive }) =>
+            isActive
+              ? "text-[#122f2a] font-bold"
+              : "text-[#800080] hover:text-[#122f2a] font-bold"
+          }
+        >
+          <p>Pages</p>
+        </NavLink>
+        <div className="absolute  -left-5 z-[200] pt-4 top-6 hidden group-hover:block  w-[180px]">
+          <div className="">
+          <Link to="">
+            <p className="text-xl bg-green-600 hover:bg-[#122f2a] hover:text-textWhite px-4 py-2 shadow-xl">
+              EventPage
+            </p>
+          </Link>
+          <Link to="">
+            <p className="text-xl mt-2 bg-green-600 hover:bg-[#122f2a] hover:text-textWhite px-4 py-2 shadow-xl">
+              EventPage
+            </p>
+          </Link>
+          </div>
+        </div>
+      </div>
 
       <NavLink
         to="/home2/blog2"
         className={({ isActive }) =>
-          isActive ? "text-[#122f2a] font-bold" : "text-[#800080] hover:text-[#122f2a] font-bold"
+          isActive
+            ? "text-[#122f2a] font-bold"
+            : "text-[#800080] hover:text-[#122f2a] font-bold"
         }
       >
         Blogs
@@ -75,7 +99,9 @@ const Navbar2 = () => {
       <NavLink
         to="/home2/contact2"
         className={({ isActive }) =>
-          isActive ? "text-[#122f2a] font-bold" : "text-[#800080] hover:text-[#122f2a] font-bold"
+          isActive
+            ? "text-[#122f2a] font-bold"
+            : "text-[#800080] hover:text-[#122f2a] font-bold"
         }
       >
         Contact Us
@@ -107,7 +133,7 @@ const Navbar2 = () => {
           <div className="flex gap-4">
             <div className="flex  items-center">
               <img className="w-[30px] h-4" src={flag1} alt="" />
-               <select className="bg-[#122f2a] text-[14px] text-[#ffffff]  outline-none">
+              <select className="bg-[#122f2a] text-[14px] text-[#ffffff]  outline-none">
                 <option>English</option>
                 <option>Bangla</option>
                 <option>Arabic</option>
@@ -176,21 +202,27 @@ const Navbar2 = () => {
       {/* mobile device resposive */}
       <div>
         <div className="flex relative items-center lg:hidden gap-5">
-      <div>
-        <div onClick={() => setState(!state)}>
-          {state ? <IoCloseSharp className="text-2xl text-red-600 border border-red-600 absolute mt-3  z-[999] md:left-[45%] right-[9rem]   duration-700" /> : <IoMenu className="text-3xl absolute top-3.5" />}
-        </div>
-        <div className={`flex z-[899] h-screen md:w-[50%] w-[70%] pl-3 pr-5 justify-between bg-gray-400 pt-3 absolute  duration-500 ${state ? "left-0" : "left-[-100%]"}`}>
-            <div className="flex text-xl flex-col gap-10"> 
-            {links}
+          <div>
+            <div onClick={() => setState(!state)}>
+              {state ? (
+                <IoCloseSharp className="text-2xl text-red-600 border border-red-600 absolute mt-3  z-[999] md:left-[45%] right-[9rem]   duration-700" />
+              ) : (
+                <IoMenu className="text-3xl absolute top-3.5" />
+              )}
             </div>
+            <div
+              className={`flex z-[899] h-screen md:w-[50%] w-[70%] pl-3 pr-5 justify-between bg-gray-400 pt-3 absolute  duration-500 ${
+                state ? "left-0" : "left-[-100%]"
+              }`}
+            >
+              <div className="flex text-xl flex-col gap-10">{links}</div>
+            </div>
+          </div>
+          <div className="flex mt-3 ml-3 items-center">
+            <img className="w-5 h-5 mr-2" src={logoImg} alt="" />
+            <h4 className="text-2xl font-bold text-title">Charitia</h4>
+          </div>
         </div>
-      </div>
-      <div className="flex mt-3 ml-3 items-center">
-          <img className="w-5 h-5 mr-2" src={logoImg} alt="" />
-          <h4 className="text-2xl font-bold text-title">Charitia</h4>
-        </div>
-      </div>
       </div>
       {/* kata chira img navbar */}
       <div className="w-full absolute h-[19px] z-40">

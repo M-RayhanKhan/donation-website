@@ -11,6 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
+import { Helmet } from "react-helmet-async";
 
 const Donate2 = () => {
   const { donate } = useContext(DonateContaxt);
@@ -36,6 +37,7 @@ const Donate2 = () => {
   return (
     <section className="bg-[#ebebe8] py-16">
       <Container>
+        
         {/* text content and active button here */}
         <div className="flex items-end mb-8 justify-between">
           {/* text content */}
@@ -84,7 +86,7 @@ const Donate2 = () => {
         </div>
         {/* show donate data */}
         <div className="">
-        <Swiper
+          <Swiper
             slidesPerView={1}
             spaceBetween={15}
             pagination={{
