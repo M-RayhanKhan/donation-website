@@ -15,6 +15,7 @@ import Swal from "sweetalert2";
 import { HiOutlineMail } from "react-icons/hi";
 import sidebarImg from "../../../../assets/marquee/sidebar-slogan-img 1.png";
 import objectImg from "../../../../assets/marquee/OBJECTS.png";
+import { Helmet } from "react-helmet-async";
 
 const EventPage = () => {
   const [money, setMoney] = useState(0);
@@ -87,6 +88,9 @@ const EventPage = () => {
 
   return (
     <section>
+      <Helmet>
+        <title>Donate | Event Page</title>
+      </Helmet>
       <GlobalSection title="Event Page" />
       <Container className="grid md:gap-4 lg:gap-8 md:grid-cols-12 my-10">
         {/* donate details data */}

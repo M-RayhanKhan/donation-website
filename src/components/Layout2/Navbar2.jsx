@@ -71,14 +71,14 @@ const Navbar2 = () => {
         </NavLink>
         <div className="absolute  -left-5 z-[200] pt-4 top-6 hidden group-hover:block  w-[180px]">
           <div className="">
-          <Link to="">
+          <Link to="/home2/eventPage">
             <p className="text-xl bg-green-600 hover:bg-[#122f2a] hover:text-textWhite px-4 py-2 shadow-xl">
               EventPage
             </p>
           </Link>
-          <Link to="">
+          <Link to="/home2/eventDetails">
             <p className="text-xl mt-2 bg-green-600 hover:bg-[#122f2a] hover:text-textWhite px-4 py-2 shadow-xl">
-              EventPage
+              EventDetails
             </p>
           </Link>
           </div>

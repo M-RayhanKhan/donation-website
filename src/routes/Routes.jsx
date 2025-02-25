@@ -19,6 +19,7 @@ import { Navigation } from "swiper/modules";
 import DonateDetails from "../components/Home2/Home2Component/DonateDetails/DonateDetails";
 import { param } from "motion/react-client";
 import EventPage from "../components/Home2/Home2Component/EvenPageContainer/EventPage";
+import EventDetails from "../components/Home2/Home2Component/EvenPageContainer/EventDetails";
 
 const router = createBrowserRouter([
   {
@@ -98,6 +99,10 @@ const router = createBrowserRouter([
       {
         path: 'eventPage',
         element: <EventPage/>
+      },
+      {
+        path: 'eventDetails',
+        element: <EventDetails/>
       }
     ],
   },
